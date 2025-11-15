@@ -14,3 +14,5 @@ Questo repository contiene script Python per generare grafici utilizzati nelle p
 - `plot_polarizzazioni.py`: Genera i grafici delle polarizzazioni (lineare, circolare destra/sinistra, ellittica).
 - `plot_segnale_sinusoidale.py`: Genera il grafico di un segnale sinusoidale nel tempo.
 - `plot_segnale_quadra.py`: Genera il grafico di un segnale rettangolare (quadra).
+- `plot_modulazione_am.py`: Genera il grafico della modulazione di ampiezza (AM).
+- `plot_modulazione_fm.py`: Genera il grafico della modulazione di frequenza (FM).
