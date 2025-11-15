@@ -12,3 +12,4 @@ Questo repository contiene script Python per generare grafici utilizzati nelle p
 - `plot_campo_elettrico.py`: Genera il grafico del campo elettrico vs distanza.
 - `plot_campo_magnetico.py`: Genera il grafico del campo magnetico attorno a un conduttore.
 - `plot_polarizzazioni.py`: Genera i grafici delle polarizzazioni (lineare, circolare destra/sinistra, ellittica).
+- `plot_segnale_sinusoidale.py`: Genera il grafico di un segnale sinusoidale nel tempo.
