@@ -8,3 +8,5 @@ E COMUNICAZIONI IN CASO DI CATASTROFI NATURALI
 naturali
 - Bande di frequenze attribuite al servizio di radioamatore per le catastrofi
 naturali
+
+[Torna al README](../../README.md) | [Precedente: 2 Abbreviazioni Operative](./2_Abbreviazioni_Operative.md) | [Successivo: 4 Indicativi di Chiamata](./4_Indicativi_Chiamata.md)

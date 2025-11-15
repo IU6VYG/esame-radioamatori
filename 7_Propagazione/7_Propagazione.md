@@ -11,3 +11,5 @@
 - Inversione di temperatura
 - Riflessione sporadica sullo strato E
 - Riflessione aurorale
+
+[Torna al README](../../README.md) | [Precedente: 6.3 Linee di trasmissione](../6_Antenne_Linee_Trasmissioni/6.3_Linee_di_trasmissione.md) | [Successivo: 8.1 Principi sulle misure](../8_Misure/8.1_Principi_sulle_misure.md)

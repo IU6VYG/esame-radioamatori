@@ -52,3 +52,5 @@ Trasmettitore
 UR
 
 Vostro
+
+[Torna al README](../../README.md) | [Precedente: 1 Codice Q](./1_Codice_Q.md) | [Successivo: 3 Segnali Internazionali di Soccorso](./3_Segnali_Internazionali_Soccorso.md)
