@@ -1,0 +1,5 @@
+tasto RIT
+tasto NIL
+amplificatore Darlington
+resistenza di Shunt
+risoluzione 640
