@@ -164,46 +164,68 @@ def generate_capacitor_charge():
     plt.close()
 
 def generate_symbol_resistor():
-    """Generate a small SVG showing resistor symbols (zig-zag and IEC rectangle)."""
+    """Generate an improved SVG showing resistor symbols (zig-zag and IEC rectangle)."""
     with schemdraw.Drawing(file='images/symbol_resistor.svg', show=False) as d:
-        d.config(unit=1.0)
-        # zig-zag style
-        d += elm.Resistor().left().label('R', loc='bottom')
-        # gap
-        d += elm.Line().right().length(1)
-        # IEC rectangle style: draw a box symbolically
-        d += elm.Line().right().length(0.3)
-        d += elm.RBox().right().label('R', loc='bottom')
+        d.config(unit=1.2, fontsize=14)
+        # left lead
+        d += elm.Line().left().length(0.6)
+        # zig-zag resistor centered
+        d += elm.Resistor().right().length(1.4).label('R', loc='bottom')
+        # right lead and gap to IEC box
+        d += elm.Line().right().length(0.6)
+        d += elm.Line().right().length(0.6)
+        # IEC rectangle style
+        d += elm.RBox().right().length(1.0).label('R', loc='bottom')
+        d += elm.Line().right().length(0.6)
         d.draw(show=False)
 
 def generate_symbol_capacitor():
-    """Generate a small SVG with capacitor symbol."""
+    """Generate an improved SVG with capacitor symbol and leads."""
     with schemdraw.Drawing(file='images/symbol_capacitor.svg', show=False) as d:
-        d += elm.Capacitor().label('C', loc='bottom')
+        d.config(unit=1.2, fontsize=14)
+        d += elm.Line().left().length(0.6)
+        d += elm.Capacitor().right().label('C', loc='bottom')
+        d += elm.Line().right().length(0.6)
         d.draw(show=False)
 
 def generate_symbol_inductor():
-    """Generate a small SVG with inductor symbol."""
+    """Generate an improved SVG with inductor symbol and leads."""
     with schemdraw.Drawing(file='images/symbol_inductor.svg', show=False) as d:
-        d += elm.Inductor().label('L', loc='bottom')
+        d.config(unit=1.2, fontsize=14)
+        d += elm.Line().left().length(0.6)
+        d += elm.Inductor().right().length(1.4).label('L', loc='bottom')
+        d += elm.Line().right().length(0.6)
         d.draw(show=False)
 
 def generate_symbol_diode():
-    """Generate a small SVG with diode symbol."""
+    """Generate an improved SVG with diode symbol and leads (showing polarity)."""
     with schemdraw.Drawing(file='images/symbol_diode.svg', show=False) as d:
-        d += elm.Diode().label('D', loc='bottom')
+        d.config(unit=1.2, fontsize=14)
+        d += elm.Line().left().length(0.6)
+        d += elm.Diode().right().label('D', loc='bottom')
+        d += elm.Line().right().length(0.6)
         d.draw(show=False)
 
 def generate_symbol_transistor():
-    """Generate a small SVG with generic BJT symbol."""
+    """Generate an improved SVG showing NPN and PNP transistor side by side."""
     with schemdraw.Drawing(file='images/symbol_transistor.svg', show=False) as d:
-        d += elm.BjtNpn().label('Q', loc='bottom')
+        d.config(unit=1.2, fontsize=12)
+        # NPN
+        d += elm.BjtNpn().label('NPN', loc='bottom')
+        d += elm.Line().right().length(1.0)
+        # PNP (if available)
+        try:
+            d += elm.BjtPnp().label('PNP', loc='bottom')
+        except Exception:
+            # fallback: duplicate NPN for visual
+            d += elm.BjtNpn().label('PNP?', loc='bottom')
         d.draw(show=False)
 
 def generate_symbol_ic():
-    """Generate a small SVG representing an integrated circuit package."""
+    """Generate an improved SVG representing an integrated circuit package with pins."""
     with schemdraw.Drawing(file='images/symbol_ic.svg', show=False) as d:
-        # draw a small rectangle with pins
+        d.config(unit=1.2, fontsize=12)
+        # central box
         d += elm.RBox().label('IC', loc='center')
         d.draw(show=False)
 
