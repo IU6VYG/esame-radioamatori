@@ -39,7 +39,7 @@ Per ottenere la licenza radioamatore in Italia sono necessari specifici requisit
 
 ### Requisiti Generali
 
-- **Età minima**: 16 anni (con autorizzazione genitori se minorenne)
+- **Età minima**: 14 anni (con autorizzazione genitori se minorenne)
 - **Cittadinanza**: Italiana o comunitaria (possibili eccezioni)
 - **Capacità giuridica**: Piena capacità di agire
 - **Assenza condanne**: Non aver riportato condanne penali gravi
@@ -246,8 +246,8 @@ Testa le tue conoscenze sulla legislazione italiana!
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>B) 16 anni</strong></p>
-  <p>In Italia è possibile ottenere la licenza radioamatore a 16 anni, con autorizzazione dei genitori se minorenni.</p>
+  <p><strong>A) 14 anni</strong></p>
+  <p>In Italia è possibile ottenere la licenza radioamatore a 14 anni, con autorizzazione dei genitori se minorenni.</p>
 </details>
 
 ### Domanda 2: Per quanto tempo deve essere conservato il registro di stazione?
