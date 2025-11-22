@@ -70,9 +70,10 @@ L'Articolo 1.81 definisce la stazione di radioamatore:
 graph TD;
     Operatore["Operatore<br>👤"] --> Controlli["Controlli<br>🎛️"];
     Controlli --> Trasmittente["Trasmittente<br>📡"];
+    Controlli --> Ricevente["Ricevente<br>📻"];
     Trasmittente --> Amplificatore["Amplificatore<br>🔊"];
     Amplificatore --> Antenna["Antenna<br>📻"];
-    Antenna --> Ricevente["Ricevente<br>📻"];
+    Antenna --> Ricevente;
     Ricevente --> Altoparlante["Altoparlante<br>🔊"];
     Alimentazione["Alimentazione<br>🔋"] --> Trasmittente;
     Alimentazione --> Ricevente;
