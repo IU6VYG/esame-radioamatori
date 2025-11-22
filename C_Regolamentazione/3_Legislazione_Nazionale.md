@@ -8,4 +8,4 @@ L'OTTENIMENTO DELLA LICENZA
 - obiettivi
 - dati da registrare
 
-[Torna al README](https://github.com/giangio/esame-radioamatori/blob/main/README.md) | [Precedente: 2 Regolamentazione della CEPT](./2_Regolamentazione_CEPT.md)
+[Torna al README](../../README.md) | [Precedente: 2 Regolamentazione della CEPT](./2_Regolamentazione_CEPT.md)

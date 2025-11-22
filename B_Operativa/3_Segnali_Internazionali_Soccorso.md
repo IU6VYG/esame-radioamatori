@@ -9,4 +9,4 @@ naturali
 - Bande di frequenze attribuite al servizio di radioamatore per le catastrofi
 naturali
 
-[Torna al README](https://github.com/giangio/esame-radioamatori/blob/main/README.md) | [Precedente: 2 Abbreviazioni Operative](./2_Abbreviazioni_Operative.md) | [Successivo: 4 Indicativi di Chiamata](./4_Indicativi_Chiamata.md)
+[Torna al README](../../README.md) | [Precedente: 2 Abbreviazioni Operative](./2_Abbreviazioni_Operative.md) | [Successivo: 4 Indicativi di Chiamata](./4_Indicativi_Chiamata.md)

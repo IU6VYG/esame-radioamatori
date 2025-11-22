@@ -53,4 +53,4 @@ UR
 
 Vostro
 
-[Torna al README](https://github.com/giangio/esame-radioamatori/blob/main/README.md) | [Precedente: 1 Codice Q](./1_Codice_Q.md) | [Successivo: 3 Segnali Internazionali di Soccorso](./3_Segnali_Internazionali_Soccorso.md)
+[Torna al README](../../README.md) | [Precedente: 1 Codice Q](./1_Codice_Q.md) | [Successivo: 3 Segnali Internazionali di Soccorso](./3_Segnali_Internazionali_Soccorso.md)
