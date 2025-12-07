@@ -56,6 +56,12 @@ I piani IARU hanno obiettivi chiari per l'uso efficiente dello spettro.
 
 Ogni banda ha un piano dettagliato con segmenti dedicati a diversi modi e usi.
 
+### Panoramica Allocazione Bande HF
+
+![Allocazione Bande HF](../images/b_operativa/allocazione_bande_hf.png)
+
+*Figura: Allocazione delle bande HF radioamatoriali secondo il piano IARU Regione 1. I colori identificano i diversi modi di emissione.*
+
 ### Banda 160m (1.8 MHz)
 
 | Segmento | Frequenza | Uso Principale | Note |
@@ -158,6 +164,12 @@ Regione 3:     7.000-7.040 CW, 7.040-7.080 Digi, 7.080-7.100 SSB
 
 ## 📡 Bande VHF/UHF
 
+### Panoramica Allocazione VHF/UHF
+
+![Allocazione Bande VHF/UHF](../images/b_operativa/allocazione_bande_vhf_uhf.png)
+
+*Figura: Allocazione delle bande VHF e UHF (2m, 70cm, 23cm) secondo il piano IARU Regione 1.*
+
 ### Banda 2m (144 MHz)
 
 | Segmento | Frequenza | Uso | Note |
@@ -189,6 +201,26 @@ Regione 3:     7.000-7.040 CW, 7.040-7.080 Digi, 7.080-7.100 SSB
 | CW/SSB | 431.000-432.000 | CW/SSB | Satellite |
 
 ## 🔄 Modi Speciali e Segmenti
+
+### Legenda Modi di Emissione
+
+![Legenda Modi Emissione](../images/b_operativa/legenda_modi_emissione.png)
+
+*Figura: Riepilogo dei modi di emissione con designatori, larghezze di banda e usi tipici.*
+
+### Panoramica Modi Digitali
+
+I modi digitali sono diventati fondamentali nel radioamatorismo moderno. Ecco una panoramica completa:
+
+![Panoramica Modi Digitali](../images/b_operativa/modi_digitali_panoramica.png)
+
+*Figura: Panoramica completa dei modi digitali radioamatoriali: FT8, RTTY, PSK31, SSTV, FAX, APRS, Winlink e altri.*
+
+### Frequenze Standard Modi Digitali HF
+
+![Frequenze Modi Digitali](../images/b_operativa/frequenze_modi_digitali.png)
+
+*Figura: Tabella frequenze standard per i principali modi digitali sulle bande HF.*
 
 ### Beacon
 
@@ -242,6 +274,36 @@ graph TD;
     classDef passo fill:#0f0,stroke:#333,stroke-width:2px;
     class SceltaBanda,ControllaRegione,ScegliModo,TrovaSegmento,SelezionaFreq passo;
 ```
+
+## 📊 Visualizzazioni per Modulazione e Applicazione
+
+Per facilitare la comprensione dei piani di frequenza, ecco alcune visualizzazioni organizzate per tipo di modulazione e per applicazione tipica.
+
+### Frequenze Raggruppate per Modulazione
+
+![Frequenze per Modulazione](../images/b_operativa/frequenze_per_modulazione.png)
+
+*Figura: Allocazione delle frequenze raggruppate per tipo di modulazione (CW, SSB, FM, Digitali).*
+
+### Frequenze Raggruppate per Applicazione
+
+![Frequenze per Applicazione](../images/b_operativa/frequenze_per_applicazione.png)
+
+*Figura: Allocazione delle frequenze raggruppate per applicazione tipica: DX, comunicazioni locali, contest, modi digitali, sperimentazione ed emergenza.*
+
+## 🇮🇹 Normativa Italiana
+
+### Panoramica Normativa Bande
+
+![Panoramica Normativa Italia](../images/b_operativa/panoramica_normativa_italia.png)
+
+*Figura: Stato normativo delle bande radioamatoriali in Italia (Primario/Secondario) con note specifiche.*
+
+### Potenze Massime per Banda (Classe A)
+
+![Potenze Massime Italia](../images/b_operativa/potenze_massime_italia.png)
+
+*Figura: Limiti di potenza massima per banda secondo la normativa italiana per la patente di classe A.*
 
 ## 🎯 Importanza dei Piani IARU
 
