@@ -1,24 +1,61 @@
-# Agent Guidelines
+# CLAUDE.md
 
-## Build/Test Commands
-- Generate all images: `./generate_images.sh`
-- Run single plot script: `python scripts/plot_<name>.py`
-- Install dependencies: `pip install -r requirements.txt`
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Code Style Guidelines
-- Python scripts use matplotlib and numpy imports
-- Italian language for comments and print statements
-- File naming: `plot_<description>.py` in scripts/ folder
-- Image naming: `grafico_<description>.png` in images/ folder
-- Use absolute paths when saving images
-- Include print statements confirming file saves
-- Virtual environment required (.venv or venv)
-- Scripts should be standalone and executable
+## Project Overview
 
-## Repository Structure
-- Study materials in Italian organized by exam topics
-- Scripts generate educational plots for radioamateur exam
-- Images stored in images/ folder with descriptive names
+This is an Italian amateur radio exam preparation repository containing study materials in Markdown format. The content follows the official exam program (Sub_Allegato_D_All.26.pdf) and covers:
+
+- **A. Technical Topics** (Chapters 01-10): Electricity, electronics, circuits, receivers, transmitters, antennas, propagation, measurements, interference, electrical protection
+- **B. Operational Topics** (B_Operativa/): Q codes, abbreviations, distress signals, call signs, IARU frequency plans
+- **C. Regulations** (C_Regolamentazione/): ITU Radio Regulations, CEPT regulations, Italian national legislation
+
+## Commands
+
+### Generate Images (Graphs and Diagrams)
+
+```bash
+# Activate virtual environment and run all Python scripts
+./generate_images.sh
+
+# Or manually:
+source .venv/bin/activate
+pip install -r requirements.txt  # matplotlib, numpy, schemdraw
+python scripts/<script_name>.py
+```
+
+Images are saved to `images/` directory.
+
+### Python Environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Architecture
+
+### Content Structure
+
+- Each chapter folder (01-10, B_Operativa, C_Regolamentazione) contains topic-specific Markdown files
+- Markdown files reference SVG diagrams from `images/` folder
+- All content is in Italian
+
+### Scripts (`scripts/`)
+
+Python scripts using matplotlib and schemdraw libraries to generate:
+- **plot_*.py**: Scientific graphs (waveforms, V-I curves, reactance vs frequency)
+- **generate_*.py**: Circuit diagrams using schemdraw (component symbols, example circuits)
+
+### Task Tracking (`backlog/`)
+
+Uses a simple file-based task system with YAML config. Tasks are stored as Markdown files in `backlog/tasks/`.
+
+### Key Files
+
+- `Sub_Allegato_D_All.26.pdf` / `.txt`: Official exam program source document
+- `CAPITOLO_2_MIGLIORAMENTI.md`: Documents improvements made to Chapter 2 with SVG diagrams
 
 <!-- BACKLOG.MD GUIDELINES START -->
 # Instructions for the usage of Backlog.md CLI Tool
