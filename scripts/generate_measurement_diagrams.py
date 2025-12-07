@@ -341,6 +341,317 @@ def schema_wattmetro():
     print(f"✓ Salvato: {OUTPUT_DIR / 'schema_wattmetro.png'}")
 
 
+def setup_misura_potenza_tx():
+    """Setup per misura potenza in uscita trasmettitore."""
+    fig, ax = plt.subplots(figsize=(14, 7))
+
+    # Trasmettitore
+    draw_block(ax, 1.5, 4, 2, 1.5, 'Trasmettitore\nTX', 'lightyellow')
+
+    # Cavo coassiale 1
+    ax.plot([2.6, 4], [4, 4], 'b-', linewidth=4)
+    ax.text(3.3, 4.5, '50Ω', ha='center', fontsize=9)
+
+    # Wattmetro passante
+    ax.add_patch(Rectangle((4, 3), 2.5, 2, fill=True, facecolor='lightblue',
+                            edgecolor='black', linewidth=2))
+    ax.text(5.25, 4, 'Wattmetro\nPassante', ha='center', va='center', fontsize=10, fontweight='bold')
+    ax.text(5.25, 3.3, 'Bird 43', ha='center', fontsize=8, style='italic')
+
+    # Cavo coassiale 2
+    ax.plot([6.5, 8], [4, 4], 'b-', linewidth=4)
+    ax.text(7.25, 4.5, '50Ω', ha='center', fontsize=9)
+
+    # Carico fittizio
+    draw_block(ax, 9, 4, 2, 1.5, 'Carico\nFittizio\n50Ω', 'lightsalmon')
+
+    # Display wattmetro
+    draw_block(ax, 5.25, 6.5, 2, 1, 'Display\n100W', 'lightgray')
+    draw_arrow(ax, 5.25, 5.1, 5.25, 5.9)
+
+    # Dissipazione calore
+    ax.annotate('', xy=(10.5, 5), xytext=(10.5, 3),
+                arrowprops=dict(arrowstyle='->', color='red', lw=2))
+    ax.text(11, 4, 'Calore', fontsize=9, color='red')
+
+    # Note setup
+    note_box = dict(boxstyle='round', facecolor='lightyellow', alpha=0.9)
+    ax.text(1, 1.5, 'Setup Misura Potenza TX:\n'
+                    '1. Collegare TX → Wattmetro → Carico 50Ω\n'
+                    '2. Selezionare scala appropriata\n'
+                    '3. Trasmettere in CW o FM\n'
+                    '4. Leggere potenza diretta (FWD)\n'
+                    '5. Verificare assenza riflessa (REV)',
+            fontsize=9, ha='left', va='top', bbox=note_box)
+
+    # Freccia flusso RF
+    ax.annotate('', xy=(9, 3), xytext=(2, 3),
+                arrowprops=dict(arrowstyle='->', color='green', lw=2, ls='--'))
+    ax.text(5.5, 2.5, 'Flusso RF', fontsize=9, color='green', ha='center')
+
+    ax.set_title('Setup Misura Potenza in Uscita TX', fontsize=14, fontweight='bold', pad=15)
+    ax.set_xlim(0, 12)
+    ax.set_ylim(0.5, 8)
+    ax.set_aspect('equal')
+    ax.axis('off')
+
+    plt.tight_layout()
+    plt.savefig(OUTPUT_DIR / 'setup_misura_potenza.png', dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"✓ Salvato: {OUTPUT_DIR / 'setup_misura_potenza.png'}")
+
+
+def setup_misura_ros():
+    """Setup per misura ROS/SWR antenna."""
+    fig, ax = plt.subplots(figsize=(14, 8))
+
+    # Trasmettitore
+    draw_block(ax, 1.5, 5, 2, 1.5, 'Trasmettitore\nTX\n(bassa pot.)', 'lightyellow')
+
+    # Cavo coassiale 1
+    ax.plot([2.6, 4], [5, 5], 'b-', linewidth=4)
+
+    # ROSmetro
+    ax.add_patch(Rectangle((4, 3.8), 2.5, 2.4, fill=True, facecolor='lightblue',
+                            edgecolor='black', linewidth=2))
+    ax.text(5.25, 5, 'ROSmetro', ha='center', va='center', fontsize=11, fontweight='bold')
+
+    # Indicatore FWD/REV
+    ax.add_patch(mpatches.Wedge((5.25, 4.3), 0.6, 30, 150, facecolor='white', edgecolor='black', linewidth=1.5))
+    ax.text(5.25, 4.3, 'SWR', ha='center', fontsize=7)
+
+    # Cavo coassiale 2 (verso antenna)
+    ax.plot([6.5, 9], [5, 5], 'b-', linewidth=4)
+    ax.text(7.75, 5.5, 'Cavo coassiale', ha='center', fontsize=9)
+
+    # Antenna
+    # Dipolo stilizzato
+    ax.plot([10, 10], [5, 6.5], 'k-', linewidth=3)
+    ax.plot([9, 11], [6.5, 6.5], 'k-', linewidth=3)
+    ax.plot([8.5, 9], [6.8, 6.5], 'k-', linewidth=2)
+    ax.plot([11, 11.5], [6.5, 6.8], 'k-', linewidth=2)
+    ax.text(10, 7.3, 'Antenna\n(Dipolo)', ha='center', fontsize=10)
+
+    # Frecce potenze
+    ax.annotate('', xy=(5.5, 6.5), xytext=(4.5, 6.5),
+                arrowprops=dict(arrowstyle='->', color='green', lw=2))
+    ax.text(5, 7, 'FWD', fontsize=9, color='green', ha='center')
+
+    ax.annotate('', xy=(4.5, 3.3), xytext=(5.5, 3.3),
+                arrowprops=dict(arrowstyle='->', color='red', lw=2))
+    ax.text(5, 2.9, 'REV', fontsize=9, color='red', ha='center')
+
+    # Letture tipiche
+    readings_box = dict(boxstyle='round', facecolor='lightgreen', alpha=0.9)
+    ax.text(11.5, 5, 'Letture tipiche:\n'
+                      'SWR 1.0 = perfetto\n'
+                      'SWR 1.5 = buono\n'
+                      'SWR 2.0 = accettabile\n'
+                      'SWR 3.0+ = problema',
+            fontsize=9, ha='left', va='center', bbox=readings_box)
+
+    # Note procedura
+    note_box = dict(boxstyle='round', facecolor='lightyellow', alpha=0.9)
+    ax.text(1, 2, 'Procedura:\n'
+                   '1. Collegare TX → ROSmetro → Antenna\n'
+                   '2. Impostare bassa potenza (5-10W)\n'
+                   '3. Calibrare FWD a fondo scala\n'
+                   '4. Commutare su SWR e leggere\n'
+                   '5. Se SWR alto: regolare antenna',
+            fontsize=9, ha='left', va='top', bbox=note_box)
+
+    ax.set_title('Setup Misura ROS (SWR) Antenna', fontsize=14, fontweight='bold', pad=15)
+    ax.set_xlim(0, 14)
+    ax.set_ylim(1, 8)
+    ax.set_aspect('equal')
+    ax.axis('off')
+
+    plt.tight_layout()
+    plt.savefig(OUTPUT_DIR / 'setup_misura_ros.png', dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"✓ Salvato: {OUTPUT_DIR / 'setup_misura_ros.png'}")
+
+
+def setup_test_due_toni():
+    """Setup test due toni per linearità amplificatore."""
+    fig, ax = plt.subplots(figsize=(14, 9))
+
+    # Generatori
+    draw_block(ax, 1.5, 6, 2, 1.2, 'Generatore\nf1 = 1000 Hz', 'lightyellow')
+    draw_block(ax, 1.5, 4, 2, 1.2, 'Generatore\nf2 = 1700 Hz', 'lightyellow')
+
+    # Sommatore
+    draw_block(ax, 4.5, 5, 1.5, 2, 'Σ\nMixer\nAudio', 'lightgreen')
+
+    # Frecce ai sommatore
+    draw_arrow(ax, 2.6, 6, 3.7, 5.5)
+    draw_arrow(ax, 2.6, 4, 3.7, 4.5)
+
+    # Trasmettitore SSB
+    draw_block(ax, 7, 5, 2.2, 1.5, 'TX SSB\nAmplificatore\nLineare', 'lightblue')
+    draw_arrow(ax, 5.3, 5, 5.8, 5)
+
+    # Carico
+    draw_block(ax, 10, 5, 1.8, 1.2, 'Carico\n50Ω', 'lightsalmon')
+    draw_arrow(ax, 8.2, 5, 9, 5)
+
+    # Accoppiatore
+    ax.add_patch(Rectangle((9.3, 3.5), 1.5, 1, fill=True, facecolor='plum',
+                            edgecolor='black', linewidth=1.5))
+    ax.text(10.05, 4, 'Accop.', ha='center', fontsize=8)
+    ax.plot([10, 10], [4.4, 5], 'k-', linewidth=2)
+
+    # Analizzatore di spettro
+    draw_block(ax, 10, 2, 2.5, 1.5, 'Analizzatore\ndi Spettro', 'lightgray')
+    draw_arrow(ax, 10, 3.4, 10, 2.8)
+
+    # Spettro ideale
+    ax.add_patch(Rectangle((0.5, 0.3), 5.5, 2.2, fill=True, facecolor='white',
+                            edgecolor='black', linewidth=1.5))
+    ax.text(3.25, 2.3, 'Spettro Ideale (lineare)', ha='center', fontsize=9, fontweight='bold')
+
+    # Barre spettro ideale
+    bar_x = [1.5, 2.5]
+    bar_h = [1.5, 1.5]
+    for x, h in zip(bar_x, bar_h):
+        ax.add_patch(Rectangle((x, 0.5), 0.3, h, facecolor='green', edgecolor='black'))
+    ax.text(1.65, 0.3, 'f1', ha='center', fontsize=8)
+    ax.text(2.65, 0.3, 'f2', ha='center', fontsize=8)
+
+    # Spettro con IMD
+    ax.add_patch(Rectangle((6.5, 0.3), 6, 2.2, fill=True, facecolor='white',
+                            edgecolor='black', linewidth=1.5))
+    ax.text(9.5, 2.3, 'Spettro con Distorsione (IMD)', ha='center', fontsize=9, fontweight='bold')
+
+    # Barre spettro distorto
+    imd_x = [7.2, 8, 9, 10, 10.8, 11.6]
+    imd_h = [0.3, 0.6, 1.5, 1.5, 0.6, 0.3]
+    imd_c = ['red', 'red', 'green', 'green', 'red', 'red']
+    labels = ['2f1-f2', 'f1', 'f1', 'f2', 'f2', '2f2-f1']
+    for i, (x, h, c) in enumerate(zip(imd_x, imd_h, imd_c)):
+        ax.add_patch(Rectangle((x, 0.5), 0.3, h, facecolor=c, edgecolor='black'))
+
+    ax.text(7.35, 0.3, 'IMD3', ha='center', fontsize=7, color='red')
+    ax.text(9.15, 0.3, 'f1', ha='center', fontsize=7)
+    ax.text(10.15, 0.3, 'f2', ha='center', fontsize=7)
+    ax.text(11.75, 0.3, 'IMD3', ha='center', fontsize=7, color='red')
+
+    # Annotazione IMD
+    ax.annotate('', xy=(7.35, 1.3), xytext=(9.15, 1.8),
+                arrowprops=dict(arrowstyle='->', color='red', lw=1.5))
+    ax.text(8, 1.7, 'IMD3\n-30dB', ha='center', fontsize=8, color='red')
+
+    # Formula
+    formula_box = dict(boxstyle='round', facecolor='lightyellow', alpha=0.9)
+    ax.text(4, 7.5, 'IMD3 = Pf1 - P(2f1-f2) [dB]\n'
+                     'Tipico TX lineare: IMD3 > 25-30 dB',
+            fontsize=9, ha='left', bbox=formula_box)
+
+    ax.set_title('Setup Test Due Toni - Verifica Linearità Amplificatore', fontsize=14, fontweight='bold', pad=15)
+    ax.set_xlim(0, 13)
+    ax.set_ylim(-0.2, 8.5)
+    ax.set_aspect('equal')
+    ax.axis('off')
+
+    plt.tight_layout()
+    plt.savefig(OUTPUT_DIR / 'setup_test_due_toni.png', dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"✓ Salvato: {OUTPUT_DIR / 'setup_test_due_toni.png'}")
+
+
+def setup_sonde_oscilloscopio():
+    """Posizionamento sonde oscilloscopio per misure RF."""
+    fig, ax = plt.subplots(figsize=(14, 9))
+
+    # Oscilloscopio
+    ax.add_patch(Rectangle((9, 2), 4, 5, fill=True, facecolor='lightgray',
+                            edgecolor='black', linewidth=2))
+    ax.text(11, 6.5, 'Oscilloscopio', ha='center', fontsize=11, fontweight='bold')
+
+    # Schermo
+    ax.add_patch(Rectangle((9.5, 3.5), 3, 2.5, fill=True, facecolor='black',
+                            edgecolor='gray', linewidth=1.5))
+    # Traccia sinusoidale
+    t = np.linspace(0, 2*np.pi, 100)
+    y = np.sin(3*t)
+    ax.plot(9.5 + 3*t/(2*np.pi), 4.75 + 0.8*y, 'lime', linewidth=2)
+
+    # Controlli
+    ax.add_patch(Rectangle((10, 2.3), 0.5, 0.5, fill=True, facecolor='yellow', edgecolor='black'))
+    ax.add_patch(Rectangle((11, 2.3), 0.5, 0.5, fill=True, facecolor='cyan', edgecolor='black'))
+    ax.text(10.25, 2.1, 'CH1', ha='center', fontsize=7)
+    ax.text(11.25, 2.1, 'CH2', ha='center', fontsize=7)
+
+    # BNC inputs
+    ax.add_patch(mpatches.Circle((10.25, 1.7), 0.2, facecolor='white', edgecolor='black'))
+    ax.add_patch(mpatches.Circle((11.25, 1.7), 0.2, facecolor='white', edgecolor='black'))
+
+    # Circuito sotto test
+    ax.add_patch(Rectangle((1, 3), 6, 3, fill=True, facecolor='lightgreen',
+                            edgecolor='black', linewidth=2))
+    ax.text(4, 5.5, 'Circuito Sotto Test', ha='center', fontsize=11, fontweight='bold')
+
+    # Componenti interni
+    draw_block(ax, 2.5, 4.5, 1.2, 0.8, 'Stadio\nIngresso', 'lightyellow', fontsize=7)
+    draw_block(ax, 4, 4.5, 1.2, 0.8, 'Filtro', 'lightblue', fontsize=7)
+    draw_block(ax, 5.5, 4.5, 1.2, 0.8, 'Amplif.', 'lightsalmon', fontsize=7)
+
+    ax.plot([3.2, 3.3], [4.5, 4.5], 'k-', linewidth=2)
+    ax.plot([4.7, 4.8], [4.5, 4.5], 'k-', linewidth=2)
+
+    # Sonda CH1 (ingresso)
+    ax.plot([2.5, 2.5, 8, 10.25], [4, 2, 2, 1.7], 'y-', linewidth=2.5)
+    ax.add_patch(mpatches.Circle((2.5, 4), 0.15, facecolor='yellow', edgecolor='black'))
+    ax.text(2.5, 3.5, 'Sonda\nCH1', ha='center', fontsize=8, color='darkgoldenrod')
+
+    # Sonda CH2 (uscita)
+    ax.plot([5.5, 5.5, 8.5, 11.25], [4, 1.2, 1.2, 1.7], 'c-', linewidth=2.5)
+    ax.add_patch(mpatches.Circle((5.5, 4), 0.15, facecolor='cyan', edgecolor='black'))
+    ax.text(5.5, 3.5, 'Sonda\nCH2', ha='center', fontsize=8, color='darkcyan')
+
+    # Massa comune
+    ax.plot([1.5, 1.5], [3, 1], 'k-', linewidth=2)
+    ax.plot([1.2, 1.8], [1, 1], 'k-', linewidth=2)
+    ax.plot([1.3, 1.7], [0.8, 0.8], 'k-', linewidth=1.5)
+    ax.plot([1.4, 1.6], [0.6, 0.6], 'k-', linewidth=1)
+    ax.text(1.5, 0.3, 'GND', ha='center', fontsize=8)
+
+    # Clip massa sonde
+    ax.plot([2.2, 1.5], [3.8, 2], 'y--', linewidth=1.5)
+    ax.plot([5.2, 1.5], [3.8, 2], 'c--', linewidth=1.5)
+    ax.add_patch(mpatches.Circle((2.2, 3.8), 0.1, facecolor='yellow', edgecolor='black'))
+    ax.add_patch(mpatches.Circle((5.2, 3.8), 0.1, facecolor='cyan', edgecolor='black'))
+
+    # Note
+    note_box = dict(boxstyle='round', facecolor='lightyellow', alpha=0.9)
+    ax.text(1, 7.5, 'Regole posizionamento sonde:\n'
+                     '• Masse corte (< loop induttivi)\n'
+                     '• Sonda 10:1 per alta frequenza\n'
+                     '• Compensare la sonda (onda quadra)\n'
+                     '• Non superare Vmax sonda\n'
+                     '• Collegare massa vicino al punto di misura',
+            fontsize=9, ha='left', va='top', bbox=note_box)
+
+    # Specifiche sonde
+    probe_box = dict(boxstyle='round', facecolor='lightblue', alpha=0.9)
+    ax.text(9, 8, 'Sonde tipiche:\n'
+                   '• 1:1 - DC-10MHz, 300V\n'
+                   '• 10:1 - DC-200MHz, 600V\n'
+                   '• 100:1 - alte tensioni',
+            fontsize=8, ha='left', va='top', bbox=probe_box)
+
+    ax.set_title('Posizionamento Sonde Oscilloscopio', fontsize=14, fontweight='bold', pad=15)
+    ax.set_xlim(0, 14)
+    ax.set_ylim(0, 9)
+    ax.set_aspect('equal')
+    ax.axis('off')
+
+    plt.tight_layout()
+    plt.savefig(OUTPUT_DIR / 'setup_sonde_oscilloscopio.png', dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"✓ Salvato: {OUTPUT_DIR / 'setup_sonde_oscilloscopio.png'}")
+
+
 def main():
     """Genera tutti gli schemi strumenti di misura."""
     print("Generazione schemi strumenti di misura...")
@@ -351,6 +662,12 @@ def main():
     schema_analizzatore_spettro()
     schema_rosmetro()
     schema_wattmetro()
+
+    # Configurazioni di misura
+    setup_misura_potenza_tx()
+    setup_misura_ros()
+    setup_test_due_toni()
+    setup_sonde_oscilloscopio()
 
     print("\n✅ Tutti gli schemi sono stati generati con successo!")
 

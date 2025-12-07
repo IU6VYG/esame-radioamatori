@@ -16,6 +16,14 @@ Il nostro corpo è un conduttore elettrico eccellente! L'acqua nei tessuti (circ
 | 100-200 | Fibrillazione ventricolare (morte) |
 | 2000+ | Arresto cardiaco immediato |
 
+### Curva IEC 60479-1
+
+La norma IEC definisce le zone di pericolosità in funzione di corrente e tempo di esposizione.
+
+![Curva IEC effetti corrente](../images/10_protezione/curva_iec_corrente.png)
+
+*La curva IEC mostra come correnti oltre 30mA per tempi superiori a 100ms possono causare fibrillazione ventricolare.*
+
 ### Percorsi della Corrente nel Corpo
 
 La corrente segue il percorso di minor resistenza:
@@ -57,6 +65,12 @@ I radioamatori utilizzano diversi sistemi di alimentazione, ognuno con rischi sp
 2. **Interruttore Magnetotermico**: Protegge da sovraccarichi e cortocircuiti
 3. **Messa a Terra**: Scarica le tensioni di guasto
 4. **Isolamento Doppio**: Strato isolante supplementare
+
+### Schema Funzionamento Interruttore Differenziale
+
+![Schema differenziale](../images/10_protezione/schema_differenziale.png)
+
+*L'interruttore differenziale confronta corrente entrante e uscente: se la differenza supera 30mA, sgancia in meno di 30ms.*
 
 ### Diagramma Sistema di Alimentazione Sicuro
 ```mermaid
@@ -149,6 +163,12 @@ I fulmini sono scariche elettriche naturali con energia devastante.
 - **Linee bilanciate**: Riduzione induttanza comune
 - **Messa a terra separata**: Per antenna e struttura
 
+### Schema Scaricatore Antenna (Gas Discharge Tube)
+
+![Schema scaricatore](../images/10_protezione/schema_scaricatore.png)
+
+*Lo scaricatore a gas ionizza durante sovratensioni, deviando l'energia del fulmine verso terra e proteggendo la radio.*
+
 #### 3. **Protezione degli Apparati**
 - **Filtri di linea**: Soppressori di sovratensioni
 - **Diodi di protezione**: TVS, varistor
@@ -175,6 +195,12 @@ graph TD;
 - Cavo di rame 16mm² per discesa
 - Terra con 4-6 picchetti da 1.5m
 - Resistenza terra < 10 ohm
+
+### Schema Impianto di Messa a Terra
+
+![Schema messa a terra](../images/10_protezione/schema_messa_terra.png)
+
+*Impianto completo: barra equipotenziale, picchetti di dispersione, collegamento traliccio e scaricatore antenna.*
 
 ## 🛠️ Procedure di Sicurezza Operative
 
