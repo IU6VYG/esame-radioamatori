@@ -1,11 +1,11 @@
 ---
 id: task-29
 title: Arricchire diagrammi ricevitori - Capitolo 4
-status: In Progress
+status: Done
 assignee:
   - '@claude'
 created_date: '2025-12-07 16:23'
-updated_date: '2025-12-07 18:20'
+updated_date: '2025-12-07 18:33'
 labels:
   - diagrams
   - chapter4
@@ -33,11 +33,11 @@ Migliorare i diagrammi a blocchi dei ricevitori con maggior dettaglio: etichette
 
 <!-- SECTION:NOTES:BEGIN -->
 Creato script generate_receiver_diagrams.py con 5 visualizzazioni:
-- supereterodina_dettagliato.png: Schema con frequenze tipiche HF
-- ricevitore_sdr.png: Architettura SDR I/Q moderna
-- flusso_segnale_dbm.png: Livelli segnale da antenna a uscita
-- mixer_oscillatore.png: Dettaglio mixer diodi e VFO/PLL
-- confronto_architetture_rx.png: Tabella confronto architetture
+- Ricevitore supereterodina con antenna sopra preselettore
+- Ricevitore SDR I/Q con architettura a canali separati
+- Flusso segnale con livelli dBm
+- Mixer e oscillatore locale
+- Confronto architetture ricevitori
 
-Integrate in 04_Ricevitori/4.2_Schemi_a_blocchi.md
+Stile moderno con ombre, angoli arrotondati e blocchi colorati.
 <!-- SECTION:NOTES:END -->
