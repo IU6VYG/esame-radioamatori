@@ -15,7 +15,7 @@ La legislazione italiana per le radiocomunicazioni si basa su diversi livelli no
 
 ### Autorità Competente
 
-- **Ministero dello Sviluppo Economico (MISE)**: Autorità principale
+- **Ministero delle Imprese e del Made in Italy (MIMIT)**: Autorità principale (ex MISE)
 - **Garante per la Protezione dei Dati Personali**: Privacy
 - **Ispettorato Territoriale**: Controlli locali
 - **ARI (Associazione Radioamatori Italiani)**: Supporto tecnico
@@ -33,97 +33,78 @@ graph TD;
     class CodiceComunicazioni,DPR159 legge;
 ```
 
-## 📋 Requisiti per la Licenza Radioamatore
+## 📋 Requisiti per l'Autorizzazione Generale
 
-Per ottenere la licenza radioamatore in Italia sono necessari specifici requisiti.
+Per ottenere l'Autorizzazione Generale di radioamatore in Italia sono necessari specifici requisiti.
 
 ### Requisiti Generali
 
-- **Età minima**: 14 anni (con autorizzazione genitori se minorenne)
+- **Età minima**: 16 anni
 - **Cittadinanza**: Italiana o comunitaria (possibili eccezioni)
 - **Capacità giuridica**: Piena capacità di agire
 - **Assenza condanne**: Non aver riportato condanne penali gravi
 
-### Esami Richiesti
+### Esame Richiesto
 
-#### Classe A (Licenza Completa)
+L'esame per l'Autorizzazione Generale (Classe A - HAREC) consiste in una prova teorica che copre:
 
-**Esame Teorico:**
 - Legislazione e regolamentazione
 - Propagazione e antenne
 - Elettronica e misure
 - Pratica operativa
 
-**Esame Pratico:**
-- Dimostrazione di trasmissione e ricezione
-- Conoscenza del codice Morse (opzionale per classi superiori)
+Il superamento dell'esame consente il rilascio del certificato **HAREC** (Harmonised Amateur Radio Examination Certificate), riconosciuto in tutti i paesi CEPT.
 
-#### Classi Inferiori
-
-- **Classe B**: Esame semplificato, potenza limitata
-- **Classe C**: Corso base, potenza molto limitata
-
-### Diagramma Procedure Licenza
+### Diagramma Procedure Autorizzazione
 ```mermaid
 graph TD;
     Candidato["Candidato<br>👤"] --> Requisiti["Verifica<br>Requisiti"];
     Requisiti --> Corso["Corso<br>Preparatorio<br>📚"];
     Corso --> EsameTeorico["Esame<br>Teorico<br>📝"];
-    EsameTeorico --> EsamePratico["Esame<br>Pratico<br>🎙️"];
-    EsamePratico --> Licenza["Licenza<br>Radioamatore<br>📻"];
+    EsameTeorico --> Autorizzazione["Autorizzazione<br>Generale<br>Classe A HAREC<br>📻"];
     Requisiti --> No["Requisiti non<br>soddisfatti<br>❌"];
     EsameTeorico --> Ripetizione["Ripetizione<br>esame<br>🔄"];
-    EsamePratico --> Ripetizione;
     classDef esame fill:#f90,stroke:#333,stroke-width:2px;
-    class EsameTeorico,EsamePratico esame;
+    class EsameTeorico esame;
     classDef successo fill:#0f0,stroke:#333,stroke-width:2px;
-    class Licenza successo;
+    class Autorizzazione successo;
 ```
 
-## 📊 Classi di Licenza Italiana
+## 📊 Autorizzazione Generale - Classe A (HAREC)
 
-Il sistema italiano prevede diverse classi di licenza con diritti progressivi.
+Il sistema italiano prevede un'unica classe di autorizzazione: la **Classe A (HAREC)**.
 
-### Classe A (Licenza Completa)
+### Caratteristiche dell'Autorizzazione Generale
 
 | Aspetto | Dettagli |
 |---------|----------|
-| **Potenza** | Fino a 1000 W (HF), 500 W (VHF/UHF) |
+| **Tipo** | Autorizzazione Generale |
+| **Classe** | A (HAREC) |
+| **Potenza massima** | Fino a 500 W |
 | **Bande** | Tutte le bande radioamatore |
-| **Codice Morse** | Non richiesto |
-| **Validità** | 10 anni |
-| **Costo** | Circa 100-150€ |
+| **Codice Morse** | Non richiesto per l'esame |
+| **Validità** | 10 anni, rinnovabile |
 
-### Classe B
+### Limiti di Potenza per Banda
 
-| Aspetto | Dettagli |
-|---------|----------|
-| **Potenza** | Fino a 100 W |
-| **Bande** | HF limitate + VHF/UHF |
-| **Codice Morse** | Richiesto (12 WPM) |
-| **Validità** | 10 anni |
-| **Costo** | Circa 80-120€ |
+La potenza massima di 500 W si applica alla maggior parte delle bande, con riduzioni su alcune bande per limitare le interferenze:
 
-### Classe C (Entrata)
+| Banda | Potenza massima | Note |
+|-------|----------------|------|
+| HF (generale) | 500 W | Potenza massima consentita |
+| Bande con restrizioni | Ridotta | Per limitare interferenze |
+| VHF/UHF | 500 W | Potenza massima consentita |
 
-| Aspetto | Dettagli |
-|---------|----------|
-| **Potenza** | Fino a 10 W |
-| **Bande** | Solo VHF/UHF |
-| **Codice Morse** | Richiesto (8 WPM) |
-| **Validità** | 5 anni |
-| **Costo** | Circa 50-80€ |
-
-### Tabella Comparativa Classi
+### Diagramma Autorizzazione Generale
 ```mermaid
-graph LR;
-    ClasseC["Classe C<br>🔰<br>10W VHF/UHF"] --> ClasseB["Classe B<br>📻<br>100W HF limitato"];
-    ClasseB --> ClasseA["Classe A<br>⚡<br>1000W tutte bande"];
-    ClasseC --> Morse["Morse<br>8 WPM"];
-    ClasseB --> Morse12["Morse<br>12 WPM"];
-    ClasseA --> NoMorse["No Morse<br>Obbligatorio"];
+graph TD;
+    Esame["Esame Teorico<br>📝"] --> HAREC["Certificato HAREC<br>🏆"];
+    HAREC --> AutorizzazioneGenerale["Autorizzazione Generale<br>Classe A<br>📻"];
+    AutorizzazioneGenerale --> Potenza["Potenza max 500W<br>⚡"];
+    AutorizzazioneGenerale --> Bande["Tutte le bande<br>radioamatore<br>📡"];
+    AutorizzazioneGenerale --> CEPT["Riconoscimento<br>CEPT<br>🌍"];
     classDef classe fill:#0cf,stroke:#333,stroke-width:2px;
-    class ClasseA,ClasseB,ClasseC classe;
+    class AutorizzazioneGenerale classe;
 ```
 
 ## 📝 Registro di Stazione
@@ -203,11 +184,10 @@ graph TD;
 
 ## 🔄 Rinnovo e Aggiornamenti
 
-### Validità della Licenza
+### Validità dell'Autorizzazione
 
-- **Classe A/B**: 10 anni
-- **Classe C**: 5 anni
-- **Rinnovo**: Automatico con pagamento
+- **Autorizzazione Generale (Classe A)**: 10 anni
+- **Rinnovo**: Con pagamento dei diritti amministrativi
 - **Aggiornamenti**: Obbligatori per cambiamenti normativi
 
 ### Procedure di Rinnovo
@@ -228,8 +208,8 @@ graph TD;
 
 ### Esempio Pratico: Attività Giornaliera
 
-Un radioamatore con licenza Classe A può:
-- Trasmettere su 40m SSB fino a 400W
+Un radioamatore con Autorizzazione Generale (Classe A) può:
+- Trasmettere su 40m SSB fino a 500W
 - Partecipare a contest internazionali
 - Costruire antenne personalizzate
 - Operare in mobilità con identificativo /M
@@ -262,7 +242,7 @@ Testa le tue conoscenze sulla legislazione italiana!
   <p>Il registro di stazione deve essere conservato per almeno 3 anni ed è soggetto a controlli delle autorità.</p>
 </details>
 
-### Domanda 3: Qual è la potenza massima per una licenza Classe A?
+### Domanda 3: Qual è la potenza massima per l'Autorizzazione Generale (Classe A)?
 - A) 100 W
 - B) 500 W
 - C) 1000 W
@@ -270,8 +250,8 @@ Testa le tue conoscenze sulla legislazione italiana!
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>C) 1000 W</strong></p>
-  <p>La Classe A permette fino a 1000 W in HF e 500 W in VHF/UHF.</p>
+  <p><strong>B) 500 W</strong></p>
+  <p>L'Autorizzazione Generale (Classe A - HAREC) consente una potenza massima di 500 W, con riduzioni su alcune bande per limitare le interferenze.</p>
 </details>
 
 ### Domanda 4: Cosa succede se non si identifica correttamente la stazione?
@@ -286,16 +266,16 @@ Testa le tue conoscenze sulla legislazione italiana!
   <p>La mancata identificazione comporta sanzioni da 200 a 500 euro.</p>
 </details>
 
-### Domanda 5: Quale autorità rilascia le licenze radioamatore in Italia?
+### Domanda 5: Quale autorità rilascia le autorizzazioni radioamatore in Italia?
 - A) ARI
 - B) Ministero della Difesa
-- C) Ministero dello Sviluppo Economico
+- C) Ministero delle Imprese e del Made in Italy
 - D) Polizia Postale
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>C) Ministero dello Sviluppo Economico</strong></p>
-  <p>Il MISE è l'autorità competente per il rilascio e la gestione delle licenze radioamatore.</p>
+  <p><strong>C) Ministero delle Imprese e del Made in Italy</strong></p>
+  <p>Il MIMIT (ex MISE) è l'autorità competente per il rilascio e la gestione delle autorizzazioni radioamatore.</p>
 </details>
 
 ## Conclusione
