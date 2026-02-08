@@ -39,7 +39,7 @@ Per ottenere l'Autorizzazione Generale di radioamatore in Italia sono necessari 
 
 ### Requisiti Generali
 
-- **Età minima**: 16 anni
+- **Età minima**: 14 anni (con autorizzazione genitori se minorenne)
 - **Cittadinanza**: Italiana o comunitaria (possibili eccezioni)
 - **Capacità giuridica**: Piena capacità di agire
 - **Assenza condanne**: Non aver riportato condanne penali gravi
