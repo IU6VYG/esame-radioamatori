@@ -63,7 +63,7 @@ Ogni banda ha un piano dettagliato con segmenti dedicati a diversi modi e usi.
 
 ### Panoramica Allocazione Bande HF
 
-![Allocazione Bande HF](/images/b_operativa/allocazione_bande_hf.png)
+![Allocazione Bande HF](pathname:///images/b_operativa/allocazione_bande_hf.png)
 
 *Figura: Allocazione delle bande HF radioamatoriali secondo il piano IARU Regione 1. I colori identificano i diversi modi di emissione.*
 
@@ -171,7 +171,7 @@ Regione 3:     7.000-7.040 CW, 7.040-7.080 Digi, 7.080-7.100 SSB
 
 ### Panoramica Allocazione VHF/UHF
 
-![Allocazione Bande VHF/UHF](/images/b_operativa/allocazione_bande_vhf_uhf.png)
+![Allocazione Bande VHF/UHF](pathname:///images/b_operativa/allocazione_bande_vhf_uhf.png)
 
 *Figura: Allocazione delle bande VHF e UHF (2m, 70cm, 23cm) secondo il piano IARU Regione 1.*
 
@@ -209,7 +209,7 @@ Regione 3:     7.000-7.040 CW, 7.040-7.080 Digi, 7.080-7.100 SSB
 
 ### Legenda Modi di Emissione
 
-![Legenda Modi Emissione](/images/b_operativa/legenda_modi_emissione.png)
+![Legenda Modi Emissione](pathname:///images/b_operativa/legenda_modi_emissione.png)
 
 *Figura: Riepilogo dei modi di emissione con designatori, larghezze di banda e usi tipici.*
 
@@ -217,13 +217,13 @@ Regione 3:     7.000-7.040 CW, 7.040-7.080 Digi, 7.080-7.100 SSB
 
 I modi digitali sono diventati fondamentali nel radioamatorismo moderno. Ecco una panoramica completa:
 
-![Panoramica Modi Digitali](/images/b_operativa/modi_digitali_panoramica.png)
+![Panoramica Modi Digitali](pathname:///images/b_operativa/modi_digitali_panoramica.png)
 
 *Figura: Panoramica completa dei modi digitali radioamatoriali: FT8, RTTY, PSK31, SSTV, FAX, APRS, Winlink e altri.*
 
 ### Frequenze Standard Modi Digitali HF
 
-![Frequenze Modi Digitali](/images/b_operativa/frequenze_modi_digitali.png)
+![Frequenze Modi Digitali](pathname:///images/b_operativa/frequenze_modi_digitali.png)
 
 *Figura: Tabella frequenze standard per i principali modi digitali sulle bande HF.*
 
@@ -286,13 +286,13 @@ Per facilitare la comprensione dei piani di frequenza, ecco alcune visualizzazio
 
 ### Frequenze Raggruppate per Modulazione
 
-![Frequenze per Modulazione](/images/b_operativa/frequenze_per_modulazione.png)
+![Frequenze per Modulazione](pathname:///images/b_operativa/frequenze_per_modulazione.png)
 
 *Figura: Allocazione delle frequenze raggruppate per tipo di modulazione (CW, SSB, FM, Digitali).*
 
 ### Frequenze Raggruppate per Applicazione
 
-![Frequenze per Applicazione](/images/b_operativa/frequenze_per_applicazione.png)
+![Frequenze per Applicazione](pathname:///images/b_operativa/frequenze_per_applicazione.png)
 
 *Figura: Allocazione delle frequenze raggruppate per applicazione tipica: DX, comunicazioni locali, contest, modi digitali, sperimentazione ed emergenza.*
 
@@ -300,13 +300,13 @@ Per facilitare la comprensione dei piani di frequenza, ecco alcune visualizzazio
 
 ### Panoramica Normativa Bande
 
-![Panoramica Normativa Italia](/images/b_operativa/panoramica_normativa_italia.png)
+![Panoramica Normativa Italia](pathname:///images/b_operativa/panoramica_normativa_italia.png)
 
 *Figura: Stato normativo delle bande radioamatoriali in Italia (Primario/Secondario) con note specifiche.*
 
 ### Potenze Massime per Banda (Classe A)
 
-![Potenze Massime Italia](/images/b_operativa/potenze_massime_italia.png)
+![Potenze Massime Italia](pathname:///images/b_operativa/potenze_massime_italia.png)
 
 *Figura: Limiti di potenza massima per banda secondo la normativa italiana per la patente di classe A.*
 

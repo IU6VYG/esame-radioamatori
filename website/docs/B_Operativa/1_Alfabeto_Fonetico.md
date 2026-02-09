@@ -182,7 +182,7 @@ graph TD;
 
 ### Vista Compatta dell'Alfabeto
 
-![Alfabeto Fonetico NATO](/images/b_operativa/alfabeto_fonetico_nato.png)
+![Alfabeto Fonetico NATO](pathname:///images/b_operativa/alfabeto_fonetico_nato.png)
 
 ```
 A = Alfa       J = Juliet      S = Sierra
