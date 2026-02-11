@@ -63,7 +63,7 @@ Ogni paese ha prefissi assegnati dall'ITU per identificare la nazionalità.
 
 | Paese | Prefisso | Note |
 |-------|----------|------|
-| **Italia** | I, IK-IL, IN-IM | I = generale, IK = completo |
+| **Italia** | I, IK, IU, IW, IZ, IS, IT | Blocco ITU: IAA-IZZ |
 | **Stati Uniti** | K, W, N, AA-AL | K = est, W = ovest |
 | **Germania** | DL, DM, DN, DO | DL = principale |
 | **Regno Unito** | G, M, 2E | G = Inghilterra |
@@ -71,28 +71,39 @@ Ogni paese ha prefissi assegnati dall'ITU per identificare la nazionalità.
 | **Giappone** | JA-JS | JA = principale |
 | **Russia** | UA-UI | UA = europeo |
 
-### Prefissi per Regione Italiana
+### Zone Radioamatoriali Italiane
 
-| Regione | Prefisso | Zona |
-|---------|----------|------|
-| **Lazio** | IK0, IN3 | Roma e provincia |
-| **Lombardia** | IK2, IN3 | Milano, Brescia, etc. |
-| **Veneto** | IK3, IN3 | Venezia, Verona, etc. |
-| **Campania** | IK8 | Napoli, Salerno, etc. |
-| **Sicilia** | IT9 | Palermo, Catania, etc. |
-| **Sardegna** | IS0 | Cagliari, Sassari, etc. |
+| Zona | Regioni | Prefissi |
+|------|---------|----------|
+| **0** | Lazio, Umbria | I0, IK0, IU0, IW0, IZ0 |
+| **1** | Piemonte, Valle d'Aosta, Liguria | I1, IK1, IU1, IW1, IZ1 |
+| **2** | Lombardia | I2, IK2, IU2, IW2, IZ2 |
+| **3** | Veneto, Trentino-Alto Adige, Friuli Venezia Giulia | I3, IK3, IU3, IW3, IZ3 |
+| **4** | Emilia-Romagna | I4, IK4, IU4, IW4, IZ4 |
+| **5** | Toscana | I5, IK5, IU5, IW5, IZ5 |
+| **6** | Marche, Abruzzo | I6, IK6, IU6, IW6, IZ6 |
+| **7** | Puglia, Basilicata (Matera) | I7, IK7, IU7, IW7, IZ7 |
+| **8** | Basilicata (Potenza), Campania, Calabria, Molise | I8, IK8, IU8, IW8, IZ8 |
+| **9** | Sicilia | IT9, IW9 |
+| **0** | Sardegna | IS0 |
+
+:::note
+I prefissi IQ sono riservati alle sezioni ARI, IR ai ripetitori e agli eventi, mentre IB, II, IO, IP, IY vengono assegnati temporaneamente per contest e manifestazioni speciali.
+:::
 
 ## 📊 Classi di Licenza e Indicativi
 
-### Italia: Sistema Numerico
+### Italia: Sistema Attuale
 
-| Classe | Indicativo | Esempio | Potenza |
-|--------|------------|---------|---------|
-| **Classe 1** | IKxYYY | IK0AAA | 100W |
-| **Classe 2** | IKxYYY | IK0BBB | 750W |
-| **Classe 3** | IKxYYY | IK0CCC | Illimitata |
-| **Classe B** | IKxYYY | IK0DDD | 100W limitato |
-| **Classe C** | IKxYYY | IK0EEE | 10W |
+Dal 2003, l'Italia ha adottato un sistema basato sull'**Autorizzazione Generale**:
+
+| Classe | Indicativo | Esempio | Potenza Max |
+|--------|------------|---------|-------------|
+| **Classe A (HAREC)** | Ix0YYY | IK0AAA | 500W |
+
+:::info
+Per approfondimenti sul sistema di licenze italiano, consulta la sezione [Legislazione Nazionale](/C_Regolamentazione/Legislazione_Nazionale).
+:::
 
 ### Altri Paesi: Sistemi Diversi
 
@@ -304,4 +315,3 @@ Testa le tue conoscenze sugli indicativi di chiamata!
 Gli indicativi di chiamata sono il nostro biglietto da visita nell'etere mondiale. Dalla loro struttura precisa alle regole di utilizzo, rappresentano l'ordine e la legalità delle comunicazioni radioamatoriali. Utilizzarli correttamente significa rispettare la comunità globale e garantire che ogni trasmissione sia identificabile e tracciabile. Il nostro indicativo non è solo un codice: è la nostra firma nell'etere! 📻🆔
 
 ---
-<parameter name="filePath">B_Operativa/4_Indicativi_Chiamata.md
