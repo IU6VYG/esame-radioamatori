@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docusaurus.io)",
+      "Bash(head:*)",
+      "Bash(wc:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(npx:*)",
+      "Bash(npm install:*)",
+      "Bash(python3:*)",
+      "Bash(npm run build:*)",
+      "Bash(find:*)",
+      "Bash(while read img)",
+      "Bash(do if [ ! -f \"website/static$img\" ])",
+      "Bash(then echo \"MISSING: $img\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(do [ ! -f \"website/static$img\" ])",
+      "Bash(echo:*)"
+    ]
+  }
+}

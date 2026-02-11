@@ -9,3 +9,11 @@ __pycache__/
 # File di sistema
 .DS_Store
 Thumbs.db
+
+# Docusaurus
+website/node_modules/
+website/build/
+website/.docusaurus/
+
+# Symlink per compatibilita' script immagini
+images

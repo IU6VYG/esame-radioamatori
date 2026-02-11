@@ -12,6 +12,15 @@ This is an Italian amateur radio exam preparation repository containing study ma
 
 ## Commands
 
+### Docusaurus Website
+
+```bash
+cd website
+npm install
+npm start        # Development server
+npm run build    # Production build
+```
+
 ### Generate Images (Graphs and Diagrams)
 
 ```bash
@@ -24,7 +33,7 @@ pip install -r requirements.txt  # matplotlib, numpy, schemdraw
 python scripts/<script_name>.py
 ```
 
-Images are saved to `images/` directory.
+Images are saved to `website/static/images/` directory.
 
 ### Python Environment
 
@@ -38,9 +47,14 @@ pip install -r requirements.txt
 
 ### Content Structure
 
-- Each chapter folder (01-10, B_Operativa, C_Regolamentazione) contains topic-specific Markdown files
-- Markdown files reference SVG diagrams from `images/` folder
+- Study materials live in `website/docs/` organized in three sections:
+  - `A_Tecnica/01_Elettricita/` through `A_Tecnica/10_Protezione/` - Technical chapters
+  - `B_Operativa/` - Operational topics
+  - `C_Regolamentazione/` - Regulations
+- Each markdown file has YAML frontmatter (`sidebar_position`, `title`)
+- Images are in `website/static/images/` and referenced as `/images/...` in markdown
 - All content is in Italian
+- The site is built with Docusaurus (docs-only mode) and deployed to GitHub Pages
 
 ### Scripts (`scripts/`)
 
@@ -54,8 +68,11 @@ Uses a simple file-based task system with YAML config. Tasks are stored as Markd
 
 ### Key Files
 
+- `website/docusaurus.config.ts`: Docusaurus configuration (docs-only, mermaid, KaTeX)
+- `website/sidebars.ts`: Sidebar navigation structure
+- `website/docs/intro.md`: Landing page (slug: /)
+- `.github/workflows/deploy.yml`: GitHub Pages deployment workflow
 - `Sub_Allegato_D_All.26.pdf` / `.txt`: Official exam program source document
-- `CAPITOLO_2_MIGLIORAMENTI.md`: Documents improvements made to Chapter 2 with SVG diagrams
 
 <!-- BACKLOG.MD GUIDELINES START -->
 # Instructions for the usage of Backlog.md CLI Tool

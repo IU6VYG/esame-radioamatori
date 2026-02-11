@@ -81,6 +81,12 @@ fi
 log_info "Virtual environment attivato: $VIRTUAL_ENV"
 echo ""
 
+# Crea symlink images -> website/static/images per compatibilita' con gli script
+if [ ! -e "images" ]; then
+    ln -s website/static/images images
+    log_info "Creato symlink images -> website/static/images"
+fi
+
 # Esegui uno script singolo se specificato
 if [ -n "$SINGLE_SCRIPT" ]; then
     if [ -f "scripts/$SINGLE_SCRIPT" ]; then
@@ -219,7 +225,7 @@ if [ $FAILED -gt 0 ]; then
 fi
 echo "========================================"
 echo ""
-log_info "Immagini salvate in: images/"
+log_info "Immagini salvate in: website/static/images/"
 
 # Exit con errore se ci sono stati fallimenti
 if [ $FAILED -gt 0 ]; then
