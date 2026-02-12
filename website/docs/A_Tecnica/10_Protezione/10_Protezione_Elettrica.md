@@ -25,7 +25,7 @@ Il nostro corpo è un conduttore elettrico eccellente! L'acqua nei tessuti (circ
 
 La norma IEC definisce le zone di pericolosità in funzione di corrente e tempo di esposizione.
 
-![Curva IEC effetti corrente](pathname:///images/10_protezione/curva_iec_corrente.png)
+![Curva IEC effetti corrente](/images/10_protezione/curva_iec_corrente.png)
 
 *La curva IEC mostra come correnti oltre 30mA per tempi superiori a 100ms possono causare fibrillazione ventricolare.*
 
@@ -73,7 +73,7 @@ I radioamatori utilizzano diversi sistemi di alimentazione, ognuno con rischi sp
 
 ### Schema Funzionamento Interruttore Differenziale
 
-![Schema differenziale](pathname:///images/10_protezione/schema_differenziale.png)
+![Schema differenziale](/images/10_protezione/schema_differenziale.png)
 
 *L'interruttore differenziale confronta corrente entrante e uscente: se la differenza supera 30mA, sgancia in meno di 30ms.*
 
@@ -170,7 +170,7 @@ I fulmini sono scariche elettriche naturali con energia devastante.
 
 ### Schema Scaricatore Antenna (Gas Discharge Tube)
 
-![Schema scaricatore](pathname:///images/10_protezione/schema_scaricatore.png)
+![Schema scaricatore](/images/10_protezione/schema_scaricatore.png)
 
 *Lo scaricatore a gas ionizza durante sovratensioni, deviando l'energia del fulmine verso terra e proteggendo la radio.*
 
@@ -203,7 +203,7 @@ graph TD;
 
 ### Schema Impianto di Messa a Terra
 
-![Schema messa a terra](pathname:///images/10_protezione/schema_messa_terra.png)
+![Schema messa a terra](/images/10_protezione/schema_messa_terra.png)
 
 *Impianto completo: barra equipotenziale, picchetti di dispersione, collegamento traliccio e scaricatore antenna.*
 

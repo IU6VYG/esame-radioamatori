@@ -44,7 +44,7 @@ L'**ionosfera** è la regione dell'atmosfera superiore (da 60 a 1000 km) dove i 
 
 ### Visualizzazione Strati Ionosferici
 
-![Strati ionosferici](pathname:///images/07_propagazione/strati_ionosferici.png)
+![Strati ionosferici](/images/07_propagazione/strati_ionosferici.png)
 
 *Sezione dell'atmosfera con gli strati ionosferici D, E, F1, F2 e relative altitudini e caratteristiche.*
 
@@ -65,13 +65,13 @@ La **Massima Frequenza Utilizzabile (MUF)** è la frequenza massima per comunica
 
 ### Diagramma Angolo Critico e MUF
 
-![Angolo critico](pathname:///images/07_propagazione/angolo_critico.png)
+![Angolo critico](/images/07_propagazione/angolo_critico.png)
 
 *Relazione tra angolo di incidenza, frequenza critica e MUF. Frequenze sopra la MUF attraversano l'ionosfera.*
 
 ### Variazione Giornaliera della MUF
 
-![MUF giornaliero](pathname:///images/07_propagazione/muf_giornaliero.png)
+![MUF giornaliero](/images/07_propagazione/muf_giornaliero.png)
 
 *La MUF varia significativamente durante le 24 ore, con massimo nel pomeriggio e minimo prima dell'alba.*
 
@@ -120,13 +120,13 @@ L'**angolo di irradiazione** determina se il segnale va verso l'onda di suolo o 
 
 ### Visualizzazione Zona di Skip
 
-![Zona di skip](pathname:///images/07_propagazione/zona_skip.png)
+![Zona di skip](/images/07_propagazione/zona_skip.png)
 
 *La zona di skip è l'area dove il segnale non arriva: troppo lontana per l'onda di terra, troppo vicina per l'onda spaziale.*
 
 ### Propagazione Multi-Hop per DX Mondiale
 
-![Propagazione multi-hop](pathname:///images/07_propagazione/propagazione_multihop.png)
+![Propagazione multi-hop](/images/07_propagazione/propagazione_multihop.png)
 
 *Comunicazioni DX intercontinentali: il segnale rimbalza più volte tra ionosfera e terra.*
 
