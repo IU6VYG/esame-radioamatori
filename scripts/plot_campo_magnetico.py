@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from utils import get_image_path
 
 # Dati per il grafico: Campo magnetico B = μ0 * I / (2 * π * r)
 mu0 = 4 * np.pi * 1e-7  # Permeabilità del vuoto
@@ -18,5 +19,6 @@ plt.legend()
 plt.tight_layout()
 
 # Salva l'immagine
-plt.savefig('/Users/giangio/Documents/GitHub/giangio/esame-radioamatori/images/01_elettronica/grafico_campo_magnetico.png', dpi=150)
-print("Grafico salvato in images/01_elettronica/grafico_campo_magnetico.png")
+output = get_image_path('01_elettronica', 'grafico_campo_magnetico.png')
+plt.savefig(output, dpi=150)
+print(f"Grafico salvato in {output}")
