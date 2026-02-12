@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from utils import get_image_path
 
 # Dati per il grafico: Curva V-I di un resistore (Legge di Ohm)
 R = 1000  # Resistenza di 1kΩ
@@ -17,5 +18,6 @@ plt.legend()
 plt.tight_layout()
 
 # Salva l'immagine
-plt.savefig('/Users/giangio/Documents/GitHub/giangio/esame-radioamatori/images/01_elettronica/grafico_resistore_vi.png', dpi=150)
-print("Grafico salvato in images/01_elettronica/grafico_resistore_vi.png")
+output = get_image_path('01_elettronica', 'grafico_resistore_vi.png')
+plt.savefig(output, dpi=150)
+print(f"Grafico salvato in {output}")
