@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from utils import get_image_path
 
 # Dati per il grafico: Campo elettrico E = V / d, con V = 100 V
 d = np.linspace(0.01, 0.05, 100)  # Distanza da 0.01 m a 0.05 m
@@ -16,5 +17,6 @@ plt.legend()
 plt.tight_layout()
 
 # Salva l'immagine
-plt.savefig('/Users/giangio/Documents/GitHub/giangio/esame-radioamatori/images/01_elettronica/grafico_campo_elettrico.png', dpi=150)
-print("Grafico salvato in images/01_elettronica/grafico_campo_elettrico.png")
+output = get_image_path('01_elettronica', 'grafico_campo_elettrico.png')
+plt.savefig(output, dpi=150)
+print(f"Grafico salvato in {output}")

@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from utils import get_image_path
 
 # Dati per il grafico: Carica e scarica di un condensatore
 R = 1000  # Resistenza di 1kΩ
@@ -50,5 +51,6 @@ ax2.axvline(x=tau * 1000, color='green', linestyle=':', alpha=0.5, label=f'τ = 
 plt.tight_layout()
 
 # Salva l'immagine
-plt.savefig('/Users/giangio/Documents/GitHub/giangio/esame-radioamatori/images/01_elettronica/grafico_condensatore_carica.png', dpi=150)
-print("Grafico salvato in images/01_elettronica/grafico_condensatore_carica.png")
+output = get_image_path('01_elettronica', 'grafico_condensatore_carica.png')
+plt.savefig(output, dpi=150)
+print(f"Grafico salvato in {output}")
