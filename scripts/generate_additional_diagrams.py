@@ -1,22 +1,15 @@
 #!/usr/bin/env python3
 """
-Script per generare diagrammi aggiuntivi per il capitolo 2 - versione semplificata
+Script per generare diagrammi aggiuntivi: circuiti (cap. 3) e tipologie componenti (cap. 2)
 """
 
 import schemdraw
 import schemdraw.elements as elm
-import os
-
 from utils import get_output_dir, run_with_error_handling
 
-# Directory di output
-OUTPUT_DIR = get_output_dir("03_circuiti")
-
-def setup_output_directory():
-    """Crea la directory images se non esiste"""
-    if not os.path.exists('../images'):
-        os.makedirs('../images')
-    print("Directory images pronta")
+# Directory di output per le diverse sezioni
+OUTPUT_DIR_CIRCUITI = get_output_dir("03_circuiti")
+OUTPUT_DIR_COMPONENTI = get_output_dir("02_componenti")
 
 def draw_simple_circuits():
     """Disegna circuiti semplici"""
@@ -28,7 +21,7 @@ def draw_simple_circuits():
     d1 += elm.Resistor().label('R2').down()
     d1 += elm.Line().left()
     d1 += elm.Line().up()
-    d1.save('../images/circuito_partitore_tensione.svg')
+    d1.save(OUTPUT_DIR_CIRCUITI / 'circuito_partitore_tensione.svg')
     
     # Filtro RC passa-basso
     d2 = schemdraw.Drawing(unit=3)
@@ -38,7 +31,7 @@ def draw_simple_circuits():
     d2 += elm.Ground()
     d2 += elm.Line().right()
     d2 += elm.Label('V_out')
-    d2.save('../images/filtro_passa_basso_rc.svg')
+    d2.save(OUTPUT_DIR_CIRCUITI / 'filtro_passa_basso_rc.svg')
     
     # Stabilizzatore Zener
     d3 = schemdraw.Drawing(unit=3)
@@ -50,7 +43,7 @@ def draw_simple_circuits():
     d3 += elm.Label('V_out')
     d3 += elm.Resistor().label('R_L').down()
     d3 += elm.Ground()
-    d3.save('../images/circuito_stabilizzatore_zener.svg')
+    d3.save(OUTPUT_DIR_CIRCUITI / 'circuito_stabilizzatore_zener.svg')
     
     print("Circuiti semplici generati")
 
@@ -62,14 +55,14 @@ def draw_component_variations():
     d1 += elm.Resistor().label('Standard')
     d1 += elm.ResistorVar().label('Variabile').right()
     d1 += elm.Potentiometer().label('Potenziometro').right()
-    d1.save('../images/tipologie_resistori.svg')
+    d1.save(OUTPUT_DIR_COMPONENTI / 'tipologie_resistori.svg')
     
     # Condensatori diversi
     d2 = schemdraw.Drawing(unit=2)
     d2 += elm.Capacitor().label('Fisso')
     d2 += elm.CapacitorVar().label('Variabile').right()
     d2 += elm.CapacitorTrim().label('Trim').right()
-    d2.save('../images/tipologie_condensatori.svg')
+    d2.save(OUTPUT_DIR_COMPONENTI / 'tipologie_condensatori.svg')
     
     # Diodi diversi
     d3 = schemdraw.Drawing(unit=2)
@@ -77,7 +70,7 @@ def draw_component_variations():
     d3 += elm.Zener().label('Zener').right()
     d3 += elm.LED().label('LED').right()
     d3 += elm.Schottky().label('Schottky').right()
-    d3.save('../images/tipologie_diodi.svg')
+    d3.save(OUTPUT_DIR_COMPONENTI / 'tipologie_diodi.svg')
     
     print("Variazioni componenti generate")
 
@@ -91,7 +84,7 @@ def draw_basic_circuits():
     d1 += elm.Inductor().label('L').right()
     d1 += elm.Line().down()
     d1 += elm.Line().left()
-    d1.save('../images/circuito_serie_rl.svg')
+    d1.save(OUTPUT_DIR_CIRCUITI / 'circuito_serie_rl.svg')
     
     # Circuito RLC serie
     d2 = schemdraw.Drawing(unit=3)
@@ -101,7 +94,7 @@ def draw_basic_circuits():
     d2 += elm.Capacitor().label('C').right()
     d2 += elm.Line().down()
     d2 += elm.Line().left()
-    d2.save('../images/circuito_serie_rlc.svg')
+    d2.save(OUTPUT_DIR_CIRCUITI / 'circuito_serie_rlc.svg')
     
     # Circuito con diodo di protezione
     d3 = schemdraw.Drawing(unit=3)
@@ -114,7 +107,7 @@ def draw_basic_circuits():
     d3 += elm.Label('V_out')
     d3 += elm.Resistor().label('R_load').down()
     d3 += elm.Ground()
-    d3.save('../images/circuito_protezione_diodo.svg')
+    d3.save(OUTPUT_DIR_CIRCUITI / 'circuito_protezione_diodo.svg')
     
     print("Circuiti base generati")
 
@@ -122,7 +115,6 @@ def main():
     """Funzione principale che genera diagrammi aggiuntivi"""
     print("Inizio generazione diagrammi aggiuntivi...")
     
-    setup_output_directory()
     draw_simple_circuits()
     draw_component_variations()
     draw_basic_circuits()
