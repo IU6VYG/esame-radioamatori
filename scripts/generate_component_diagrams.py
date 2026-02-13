@@ -13,6 +13,7 @@ from utils import get_output_dir, setup_logging, run_with_error_handling
 
 # Directory di output
 OUTPUT_DIR = get_output_dir('02_componenti')
+OUTPUT_DIR_CIRCUITI = get_output_dir('03_circuiti')
 
 
 def draw_resistor():
@@ -125,7 +126,7 @@ def draw_circuit_examples():
     d += elm.Capacitor().label('C').down()
     d += elm.Line().left()
     d += elm.Line().up()
-    d.save(OUTPUT_DIR / 'circuito_serie_rc.svg')
+    d.save(OUTPUT_DIR_CIRCUITI / 'circuito_serie_rc.svg')
 
     # Circuito raddrizzatore a ponte
     d2 = schemdraw.Drawing(unit=2.5)
@@ -141,7 +142,7 @@ def draw_circuit_examples():
     d2 += elm.Line().right()
     d2 += elm.Resistor().label('Load').down()
     d2 += elm.Line().left()
-    d2.save(OUTPUT_DIR / 'circuito_ponte_raddrizzatore.svg')
+    d2.save(OUTPUT_DIR_CIRCUITI / 'circuito_ponte_raddrizzatore.svg')
 
     print("[OK] Circuiti di esempio generati")
 

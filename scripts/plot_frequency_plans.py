@@ -11,7 +11,7 @@ import numpy as np
 from pathlib import Path
 
 # Directory di output
-OUTPUT_DIR = Path(__file__).parent.parent / "images" / "B_operativa"
+OUTPUT_DIR = Path(__file__).parent.parent / "images" / "b_operativa"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Configurazione stile
