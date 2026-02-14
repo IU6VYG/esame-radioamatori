@@ -21,7 +21,7 @@ L'**Unione Internazionale delle Telecomunicazioni (UIT)** è un'agenzia speciali
 ### Organizzazione dell'UIT
 
 - **Sede**: Ginevra, Svizzera
-- **186 paesi membri**: Quasi tutti i paesi del mondo
+- **193 stati membri**: Quasi tutti i paesi del mondo
 - **3 settori principali**:
   - UIT-R (Radiocomunicazioni)
   - UIT-T (Telecomunicazioni standardizzazione)
@@ -64,14 +64,18 @@ L'Articolo 1.57 definisce il servizio di radioamatore via satellite:
 
 ## 🏠 Definizione della Stazione di Radioamatore
 
-L'Articolo 1.81 definisce la stazione di radioamatore:
+L'Articolo 1.81 del Regolamento delle Radiocomunicazioni definisce la stazione di radioamatore:
 
-*"Stazione di servizio di radioamatore."*
+*"Una stazione del servizio di radioamatore."* (*"A station in the amateur service."*)
 
-### Componenti di una Stazione Radioamatore
+Si tratta di una definizione volutamente generale: qualsiasi stazione che operi nell'ambito del servizio di radioamatore come definito dall'Art. 1.56.
 
-1. **Stazione trasmittente**: Apparato per generare e modulare il segnale
-2. **Stazione ricevente**: Apparato per demodulare e riprodurre il segnale
+### Componenti tipici di una Stazione Radioamatore
+
+Nella pratica, una stazione di radioamatore è composta da:
+
+1. **Trasmettitore**: Apparato per generare e modulare il segnale
+2. **Ricevitore**: Apparato per demodulare e riprodurre il segnale
 3. **Antenna**: Sistema di radiazione
 4. **Linee di trasmissione**: Cavi coassiali, guide d'onda
 5. **Alimentazione**: Sistemi di potenza
@@ -99,103 +103,165 @@ graph TD;
     class Trasmittente,Ricevente,Antenna,Amplificatore,LineaTX,LineaRX stazione;
 ```
 
-## 📜 Articolo S25: Condizioni Generali
+## 📜 Articolo 25: Servizi di Radioamatore
 
-L'**Articolo S25** stabilisce le condizioni generali per l'uso delle frequenze da parte dei radioamatori.
+L'**Articolo 25** del Regolamento delle Radiocomunicazioni stabilisce le regole internazionali per il servizio di radioamatore e il servizio di radioamatore via satellite.
 
-### Condizioni Principali
+### Sezione I — Servizio di Radioamatore
 
-1. **Autorizzazione**: Operare solo con licenza valida
-2. **Controllo**: Mantenere sempre il controllo della stazione
-3. **Interferenze**: Non causare danni interferenze
-4. **Identificazione**: Identificare regolarmente la stazione
-5. **Emergenze**: Dare priorità ai segnali di soccorso
+#### Comunicazioni internazionali (25.1)
+Le radiocomunicazioni tra stazioni di radioamatore di paesi diversi **sono permesse**, salvo che l'amministrazione di uno dei paesi interessati abbia notificato la propria obiezione.
 
-### Limitazioni di Potenza
+#### Contenuto delle comunicazioni (25.2)
+Le trasmissioni tra stazioni di paesi diversi devono essere **limitate** a comunicazioni inerenti allo scopo del servizio radioamatore e a osservazioni di **carattere personale**.
 
-| Banda | Potenza massima PEP |
-|-------|-------------------|
-| HF (1.8-30 MHz) | 500 W |
-| VHF (50-54 MHz) | 500 W |
-| UHF (144-146 MHz) | 500 W |
-| Above 430 MHz | 500 W |
+#### Divieto di codifica (25.2A)
+Le trasmissioni internazionali **non devono essere codificate** allo scopo di oscurarne il significato, ad eccezione dei segnali di controllo scambiati tra stazioni di comando a terra e stazioni spaziali nel servizio di radioamatore via satellite.
 
-### Esempio Pratico
-Un radioamatore italiano può trasmettere fino a 500 W PEP su 40 metri, ma deve rispettare le normative nazionali più restrittive.
+#### Traffico per conto terzi (25.3)
+Le stazioni di radioamatore possono trasmettere comunicazioni per conto di terzi **solo durante emergenze** o per operazioni di soccorso.
+
+#### Conoscenza del codice Morse (25.5)
+Spetta alle **amministrazioni nazionali** stabilire se la conoscenza del codice Morse sia richiesta per il rilascio della licenza.
+
+#### Verifica delle qualifiche (25.6)
+Le amministrazioni devono **verificare le qualifiche operative e tecniche** di chiunque desideri operare una stazione di radioamatore.
+
+#### Potenza massima (25.7)
+La potenza massima dei trasmettitori delle stazioni di radioamatore è **fissata dalle amministrazioni nazionali**. L'UIT non stabilisce limiti di potenza specifici; ogni paese definisce i propri (in Italia il limite è 500 W PEP).
+
+#### Identificazione (25.8–25.9)
+Le stazioni di radioamatore devono trasmettere il proprio **nominativo di chiamata ad intervalli regolari** durante le trasmissioni.
+
+#### Comunicazioni di emergenza (25.9A)
+Le amministrazioni sono incoraggiate a consentire alle stazioni di radioamatore di **prepararsi e contribuire** alle comunicazioni di soccorso in caso di calamità.
+
+#### Operazione temporanea (25.9B)
+Le amministrazioni possono permettere o limitare l'**operazione temporanea** di operatori con licenza straniera nel proprio territorio.
+
+### Sezione II — Servizio di Radioamatore via Satellite
+
+#### Applicazione delle disposizioni (25.10)
+Le disposizioni della Sezione I si applicano anche al servizio di radioamatore via satellite.
+
+#### Stazioni di comando (25.11)
+Le amministrazioni che autorizzano stazioni spaziali nel servizio di radioamatore via satellite devono istituire **stazioni di comando a terra** prima del lancio del satellite.
+
+### Riepilogo dei punti chiave
+
+| Punto | Contenuto |
+|-------|-----------|
+| 25.1 | Comunicazioni internazionali permesse (salvo obiezioni) |
+| 25.2 | Comunicazioni limitate a scopi del servizio e osservazioni personali |
+| 25.2A | Divieto di codifica (eccetto segnali di controllo satellite) |
+| 25.3 | Traffico per conto terzi solo in emergenza |
+| 25.5 | Morse a discrezione delle amministrazioni |
+| 25.6 | Verifica qualifiche operative e tecniche obbligatoria |
+| 25.7 | Potenza massima fissata dalle amministrazioni nazionali |
+| 25.8–25.9 | Identificazione con nominativo ad intervalli regolari |
+| 25.9A | Preparazione per comunicazioni di emergenza |
+| 25.9B | Operazione temporanea di operatori stranieri |
+| 25.10–25.11 | Norme per il servizio satellite e stazioni di comando |
 
 ## 📊 Bande di Frequenze per Radioamatori
 
-Il Regolamento assegna bande specifiche al servizio radioamatore con diversi statuti.
+Il Regolamento delle Radiocomunicazioni (Articolo 5) assegna bande specifiche al servizio radioamatore con diversi statuti.
 
 ### Statuti delle Bande
 
-- **Primario**: Uso esclusivo del servizio radioamatore
-- **Secondario**: Servizio radioamatore ha diritto di protezione limitata
-- **Nessun statuto**: Nessuna protezione, uso su base non interferente
+- **Primario**: Il servizio ha **diritto di protezione** contro interferenze da servizi secondari. Attenzione: primario non significa "esclusivo" — la banda può essere condivisa con altri servizi primari
+- **Secondario**: Il servizio **non deve causare interferenze** ai servizi primari e **non può reclamare protezione** da essi
+- **Nessuno statuto**: Nessuna allocazione formale, uso su base non interferente
 
-### Bande HF Primarie (esempi)
+### Bande per Radioamatori — Regione 1 (ITU)
 
-| Banda | Frequenza | Statuto | Note |
-|-------|-----------|---------|------|
-| 160m | 1.810-1.850 MHz | Secondario | DX eccellente |
-| 80m | 3.500-3.800 MHz | Secondario | Tutto il mondo |
-| 40m | 7.000-7.200 MHz | Primario | Molto popolare |
-| 20m | 14.000-14.350 MHz | Primario | Condizioni variabili |
-| 15m | 21.000-21.450 MHz | Primario | Buono per DX |
-| 10m | 28.000-29.700 MHz | Primario | VHF/UHF tropo |
+La tabella seguente riporta le allocazioni secondo il Regolamento delle Radiocomunicazioni (edizione 2024) per la **Regione 1** (Europa, Africa, Medio Oriente).
+
+| Banda | Frequenza | Statuto (Reg. 1) | Note |
+|-------|-----------|-------------------|------|
+| 2200m | 135.7–137.8 kHz | Secondario | Bassa frequenza, portata limitata |
+| 630m | 472–479 kHz | Secondario | Banda MF |
+| 160m | 1.810–2.000 MHz | Primario | "Top band", DX notturno |
+| 80m | 3.500–3.800 MHz | Primario | Comunicazioni regionali/notturne |
+| 60m | 5.351–5.366 MHz | Secondario | Banda relativamente recente |
+| 40m | 7.000–7.200 MHz | Primario | Molto popolare, DX giorno/notte |
+| 30m | 10.100–10.150 MHz | Secondario | Solo modi digitali e CW |
+| 20m | 14.000–14.350 MHz | Primario | Banda DX per eccellenza |
+| 17m | 18.068–18.168 MHz | Primario | Banda WARC |
+| 15m | 21.000–21.450 MHz | Primario | Buono per DX con propagazione |
+| 12m | 24.890–24.990 MHz | Primario | Banda WARC |
+| 10m | 28.000–29.700 MHz | Primario | Propagazione sporadica E/F2 |
 
 ### Diagramma Bande HF
 ```mermaid
 graph LR;
-    HF["Bande HF<br>Radioamatore"] --> Banda160["160m<br>1.8 MHz"];
+    HF["Bande HF/MF/LF<br>Radioamatore"] --> Banda2200["2200m<br>135 kHz"];
+    HF --> Banda630["630m<br>472 kHz"];
+    HF --> Banda160["160m<br>1.8 MHz"];
     HF --> Banda80["80m<br>3.5 MHz"];
+    HF --> Banda60["60m<br>5.3 MHz"];
     HF --> Banda40["40m<br>7 MHz"];
+    HF --> Banda30["30m<br>10.1 MHz"];
     HF --> Banda20["20m<br>14 MHz"];
+    HF --> Banda17["17m<br>18 MHz"];
     HF --> Banda15["15m<br>21 MHz"];
+    HF --> Banda12["12m<br>24.9 MHz"];
     HF --> Banda10["10m<br>28 MHz"];
-    Banda40 --> Primario["Primario<br>🟢"];
+    Banda160 --> Primario["Primario<br>🟢"];
+    Banda80 --> Primario;
+    Banda40 --> Primario;
     Banda20 --> Primario;
+    Banda17 --> Primario;
     Banda15 --> Primario;
+    Banda12 --> Primario;
     Banda10 --> Primario;
-    Banda160 --> Secondario["Secondario<br>🟡"];
-    Banda80 --> Secondario;
+    Banda2200 --> Secondario["Secondario<br>🟡"];
+    Banda630 --> Secondario;
+    Banda60 --> Secondario;
+    Banda30 --> Secondario;
 ```
 
 ## 🌍 Regioni Radio dell'UIT
 
-L'UIT divide il mondo in **3 regioni** per l'allocazione delle frequenze.
+L'UIT divide il mondo in **3 regioni** (definite nell'Articolo 5 del Regolamento) per l'allocazione delle frequenze. I confini sono definiti tramite linee geografiche precise (Linee A, B e C).
 
-### Regione 1 (Europa, Africa, Medio Oriente)
+### Regione 1 — Europa, Africa, Medio Oriente, CSI
 
-- **Caratteristiche**: Densità di popolazione elevata
-- **Bande**: Alcune differenze rispetto ad altre regioni
-- **Coordinamento**: ECA (European Conference of Postal and Telecommunications Administrations)
+- **Comprende**: Europa, Africa, Medio Oriente (a ovest del Golfo Persico, incluso l'Iraq), gli stati della Comunità degli Stati Indipendenti (CSI), Mongolia
+- **Confine occidentale**: Linea B (meridiano 10° W fino a 72° N, poi arco fino a 40° N / 50° W, poi fino a 10° S / 20° W)
+- **Confine orientale**: Linea A (meridiano 40° E fino a 40° N, poi arco fino a 60° E al Tropico del Cancro, poi 60° E fino al Polo Sud)
+- **L'Italia appartiene alla Regione 1**
+- **Coordinamento regionale**: CEPT (Conferenza Europea delle Poste e Telecomunicazioni)
 
-### Regione 2 (Americhe)
+### Regione 2 — Americhe
 
-- **Caratteristiche**: Ampio territorio, diverse culture
-- **Bande**: 60m disponibile (5.3515-5.3665 MHz)
-- **Coordinamento**: CITEL (Inter-American Telecommunication Commission)
+- **Comprende**: Nord America, Centro America, Sud America, isole dei Caraibi, Groenlandia e alcune isole del Pacifico orientale
+- **Confine orientale**: Linea B
+- **Confine occidentale**: Linea C (dal Polo Nord attraverso lo Stretto di Bering, poi fino a 170° W / 10° N, poi 120° W fino al Polo Sud)
+- **Coordinamento regionale**: CITEL (Commissione Interamericana delle Telecomunicazioni)
 
-### Regione 3 (Asia, Oceania)
+### Regione 3 — Asia e Oceania
 
-- **Caratteristiche**: Alta densità popolazione, rapida crescita
-- **Bande**: Restrizioni su alcune frequenze
-- **Coordinamento**: APT (Asia-Pacific Telecommunity)
+- **Comprende**: Asia orientale (a est del Golfo Persico), la maggior parte dell'Oceania e le isole del Pacifico (escluse quelle assegnate alla Regione 2)
+- **Confine occidentale**: Linea A
+- **Confine orientale**: Linea C
+- **Coordinamento regionale**: APT (Asia-Pacific Telecommunity)
 
 ### Mappa Regioni UIT
 ```mermaid
 graph TD;
-    Mondo["Mondo<br>🌍"] --> Regione1["Regione 1<br>Europa, Africa,<br>Medio Oriente<br>🟦"];
+    Mondo["Mondo<br>🌍"] --> Regione1["Regione 1<br>Europa, Africa,<br>Medio Oriente, CSI<br>🟦"];
     Mondo --> Regione2["Regione 2<br>Americhe<br>🟥"];
     Mondo --> Regione3["Regione 3<br>Asia, Oceania<br>🟨"];
-    Regione1 --> Italia["Italia<br>🇮🇹"];
-    Regione2 --> USA["USA<br>🇺🇸"];
-    Regione3 --> Giappone["Giappone<br>🇯🇵"];
+    Regione1 --> Italia["Italia 🇮🇹"];
+    Regione1 --> Nigeria["Nigeria 🇳🇬"];
+    Regione2 --> USA["USA 🇺🇸"];
+    Regione2 --> Brasile["Brasile 🇧🇷"];
+    Regione3 --> Giappone["Giappone 🇯🇵"];
+    Regione3 --> Australia["Australia 🇦🇺"];
 ```
 
-### Esempio Pratico
-L'Italia (Regione 1) ha accesso alle bande 60m, mentre alcuni paesi della Regione 3 potrebbero avere restrizioni su queste frequenze.
+Le allocazioni di frequenza possono variare tra le tre regioni. Ad esempio, la banda 40m in Regione 1 va da 7.000 a 7.200 MHz, mentre in Regione 2 si estende da 7.000 a 7.300 MHz.
 
 ## 📋 Procedure di Coordinamento
 
@@ -229,16 +295,16 @@ Testa le tue conoscenze sul Regolamento UIT!
   <p>L'UIT definisce il servizio radioamatore come destinato esclusivamente a scopo personale senza fini finanziari.</p>
 </details>
 
-### Domanda 2: Qual è la potenza massima PEP consentita ai radioamatori secondo l'UIT?
-- A) 100 W
-- B) 250 W
-- C) 500 W
-- D) Nessun limite
+### Domanda 2: Chi stabilisce la potenza massima per le stazioni di radioamatore secondo l'Articolo 25 dell'UIT?
+- A) L'UIT direttamente, con un limite globale
+- B) Le amministrazioni nazionali di ciascun paese
+- C) La CEPT per l'Europa
+- D) La IARU (International Amateur Radio Union)
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>C) 500 W</strong></p>
-  <p>L'Articolo S25 permette fino a 500 W PEP in molte bande radioamatore.</p>
+  <p><strong>B) Le amministrazioni nazionali di ciascun paese</strong></p>
+  <p>L'Articolo 25.7 stabilisce che la potenza massima dei trasmettitori di stazioni di radioamatore è fissata dalle amministrazioni nazionali. L'UIT non definisce un limite specifico di potenza.</p>
 </details>
 
 ### Domanda 3: In quale regione UIT si trova l'Italia?
@@ -254,27 +320,27 @@ Testa le tue conoscenze sul Regolamento UIT!
 </details>
 
 ### Domanda 4: Cosa significa "statuto primario" per una banda radioamatore?
-- A) Uso commerciale permesso
-- B) Uso esclusivo del servizio radioamatore
+- A) Uso esclusivo del servizio radioamatore
+- B) Il servizio ha diritto di protezione contro interferenze da servizi secondari
 - C) Nessuna protezione
 - D) Uso militare prioritario
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>B) Uso esclusivo del servizio radioamatore</strong></p>
-  <p>Le bande primarie sono allocate esclusivamente al servizio radioamatore con piena protezione.</p>
+  <p><strong>B) Il servizio ha diritto di protezione contro interferenze da servizi secondari</strong></p>
+  <p>Un servizio primario ha diritto di protezione contro interferenze da servizi secondari, ma la banda può essere condivisa con altri servizi primari. "Primario" non significa "esclusivo".</p>
 </details>
 
-### Domanda 5: Quale articolo del Regolamento definisce le condizioni generali per i radioamatori?
+### Domanda 5: Quale articolo del Regolamento delle Radiocomunicazioni disciplina i servizi di radioamatore?
 - A) Articolo 1
-- B) Articolo 25
-- C) Articolo S25
+- B) Articolo 5
+- C) Articolo 25
 - D) Articolo 56
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>C) Articolo S25</strong></p>
-  <p>L'Articolo S25 stabilisce le condizioni generali per l'uso delle frequenze da parte dei radioamatori.</p>
+  <p><strong>C) Articolo 25</strong></p>
+  <p>L'Articolo 25 disciplina i servizi di radioamatore e di radioamatore via satellite, stabilendo le regole per le comunicazioni internazionali, l'identificazione, la verifica delle qualifiche e le comunicazioni di emergenza.</p>
 </details>
 
 ## Conclusione
