@@ -108,13 +108,13 @@ L'**Articolo S25** stabilisce le condizioni generali per l'uso delle frequenze d
 
 | Banda | Potenza massima PEP |
 |-------|-------------------|
-| HF (1.8-30 MHz) | 1500 W |
-| VHF (50-54 MHz) | 1500 W |
-| UHF (144-146 MHz) | 1500 W |
-| Above 430 MHz | 1500 W |
+| HF (1.8-30 MHz) | 500 W |
+| VHF (50-54 MHz) | 500 W |
+| UHF (144-146 MHz) | 500 W |
+| Above 430 MHz | 500 W |
 
 ### Esempio Pratico
-Un radioamatore italiano può trasmettere fino a 1500 W PEP su 40 metri, ma deve rispettare le normative nazionali più restrittive.
+Un radioamatore italiano può trasmettere fino a 500 W PEP su 40 metri, ma deve rispettare le normative nazionali più restrittive.
 
 ## 📊 Bande di Frequenze per Radioamatori
 
@@ -224,14 +224,14 @@ Testa le tue conoscenze sul Regolamento UIT!
 
 ### Domanda 2: Qual è la potenza massima PEP consentita ai radioamatori secondo l'UIT?
 - A) 100 W
-- B) 500 W
-- C) 1500 W
+- B) 250 W
+- C) 500 W
 - D) Nessun limite
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>C) 1500 W</strong></p>
-  <p>L'Articolo S25 permette fino a 1500 W PEP in molte bande radioamatore.</p>
+  <p><strong>C) 500 W</strong></p>
+  <p>L'Articolo S25 permette fino a 500 W PEP in molte bande radioamatore.</p>
 </details>
 
 ### Domanda 3: In quale regione UIT si trova l'Italia?

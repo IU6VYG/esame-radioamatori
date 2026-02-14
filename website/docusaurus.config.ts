@@ -68,6 +68,14 @@ const config: Config = {
   ],
 
   themeConfig: {
+    announcementBar: {
+      id: 'disclaimer',
+      content:
+        '⚠️ Questi sono <strong>appunti personali</strong>, non materiale ufficiale. Possono contenere errori ed sono soggetti a revisione. <a href="https://github.com/IU6VYG/esame-radioamatori" target="_blank">Contribuisci su GitHub</a>.',
+      backgroundColor: '#fff3cd',
+      textColor: '#664d03',
+      isCloseable: false,
+    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
