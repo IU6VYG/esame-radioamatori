@@ -3,6 +3,13 @@ sidebar_position: 6
 title: "B.6 Piani di Frequenze della IARU: L'Organizzazione dell'Etere"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # B.6 Piani di Frequenze della IARU: L'Organizzazione dell'Etere 📻📊
 
 Benvenuti nel mondo organizzato dei piani di frequenze IARU! L'**International Amateur Radio Union** coordina l'uso armonioso delle bande radioamatoriali in tutto il mondo, prevenendo interferenze e massimizzando le opportunità di comunicazione. Scopriamo insieme questi piani dettagliati che rendono possibile l'ordine nell'etere caotico delle radiofrequenze!

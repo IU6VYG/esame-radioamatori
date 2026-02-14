@@ -3,6 +3,13 @@ sidebar_position: 3
 title: "B.3 Abbreviazioni Operative: La Lingua Concisa dei Radioamatori"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # B.3 Abbreviazioni Operative: La Lingua Concisa dei Radioamatori 📻🔤
 
 Benvenuti nel mondo delle abbreviazioni operative! Oltre al codice Q, i radioamatori utilizzano un ricco vocabolario di abbreviazioni per rendere le comunicazioni più rapide ed efficienti. Queste brevi sequenze di lettere permettono di esprimere concetti complessi in pochi caratteri, essenziale per le comunicazioni in tempo reale. Scopriamo insieme questo linguaggio che rende l'etere più fluido e comprensibile!

@@ -3,6 +3,13 @@ sidebar_position: 5
 title: "B.5 Indicativi di Chiamata: La Nostra Identita' nell'Etere 🆔"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # B.5 Indicativi di Chiamata: La Nostra Identita' nell'Etere 📻🆔
 
 Benvenuti nel mondo degli indicativi di chiamata! L'indicativo è molto più di una semplice sigla: è la nostra identità unica nell'etere, il nostro passaporto radioamatoriale che ci identifica in tutto il mondo. Scopriamo insieme la struttura di questi codici speciali, le regole internazionali e come utilizzarli correttamente per comunicazioni sicure e ordinate!

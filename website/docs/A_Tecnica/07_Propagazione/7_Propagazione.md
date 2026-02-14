@@ -3,6 +3,13 @@ sidebar_position: 1
 title: "7. Propagazione: Il Viaggio delle Onde Radio"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # 7. Propagazione: Il Viaggio delle Onde Radio 📡
 
 Benvenuti nel affascinante mondo della propagazione delle onde radio! Immaginate le vostre trasmissioni radioamatoriali come messaggeri invisibili che viaggiano attraverso l'atmosfera terrestre. La **propagazione** determina quanto lontano possono arrivare i vostri segnali, influenzando la qualità delle comunicazioni. Scopriamo insieme i meccanismi che governano questo viaggio elettromagnetico!

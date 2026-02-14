@@ -3,6 +3,13 @@ sidebar_position: 4
 title: "B.4 Segnali Internazionali di Soccorso: Quando l'Etere Salva Vite"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # B.4 Segnali Internazionali di Soccorso: Quando l'Etere Salva Vite 🚨📻
 
 Benvenuti nel mondo cruciale dei segnali di soccorso! Come radioamatori, abbiamo il privilegio e la responsabilità di essere parte del sistema globale di soccorso. I segnali di emergenza sono codici universali che possono salvare vite umane in situazioni di pericolo. Scopriamo insieme questi segnali vitali, le procedure di emergenza e il ruolo speciale dei radioamatori nelle catastrofi naturali!

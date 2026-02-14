@@ -3,6 +3,13 @@ sidebar_position: 1
 title: "B.1 Alfabeto Fonetico: Comunicare senza Ambiguita'"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # B.1 Alfabeto Fonetico: Comunicare senza Ambiguita' 📻🔠
 
 Benvenuti nel mondo dell'alfabeto fonetico! Ogni radioamatore deve saper scandire con precisione lettere e numeri per evitare errori di comprensione. L'alfabeto fonetico NATO/ICAO e' lo standard internazionale adottato dall'UIT e utilizzato in tutte le comunicazioni radioamatoriali. Scopriamo come trasformare ogni lettera in una parola chiara e universalmente riconoscibile!
