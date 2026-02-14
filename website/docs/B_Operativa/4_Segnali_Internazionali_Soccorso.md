@@ -25,7 +25,7 @@ I segnali di soccorso sono codici internazionali standardizzati, riconosciuti in
 #### In Radiotelegrafia (CW/Morse)
 - **Codice**: ...---... (tre punti, tre linee, tre punti)
 - **Ripetizione**: Continuamente fino a risposta
-- **Origine**: 1905, convenzione di Berlino
+- **Origine**: 1906, convenzione radiotelegrafica internazionale di Berlino
 - **Significato**: Nessun significato letterale, solo segnale di emergenza
 
 #### Diagramma SOS in Morse
