@@ -36,37 +36,34 @@ graph TD;
     class ECC,Radioamatori cept;
 ```
 
-## 📋 Raccomandazione TR 61-02: Classe di Licenza
+## 📋 Raccomandazione T/R 61-02: Classi di Licenza CEPT
 
-La **Raccomandazione TR 61-02** definisce le classi di licenza radioamatore armonizzate in Europa.
+La **Raccomandazione T/R 61-02** definisce il sistema armonizzato di licenze radioamatoriali in ambito CEPT. Il sistema prevede **due livelli** di licenza, basati sul certificato d'esame.
 
 ### Classi di Licenza
 
-| Classe | Potenza | Bande | Esame | Note |
-|--------|---------|-------|-------|------|
-| **CEPT Novice** | 100 W | Limitate | Base | Principiante |
-| **CEPT 1** | 100 W | Tutte HF + VHF/UHF | Completo | Standard |
-| **CEPT 2** | 750 W | Tutte | Completo | Potenza elevata |
-| **CEPT 3** | Nessun limite | Tutte | Completo | Senza limiti |
+| Classe | Certificato | Bande | Esame | Note |
+|--------|------------|-------|-------|------|
+| **CEPT (HAREC)** | HAREC | Tutte le bande radioamatore | Esame completo (Racc. T/R 61-02) | Licenza piena, riconosciuta in tutti i paesi CEPT |
+| **CEPT Novice** | ERC/REC 05-06 | Limitate (sottoinsieme bande) | Esame di livello base | Principiante, bande e potenza ridotte |
+
+La potenza massima è stabilita dall'amministrazione nazionale di ciascun paese.
 
 ### Condizioni Generali
 
-- **Validità**: Riconosciuta in tutti i paesi CEPT
-- **Lingua**: Inglese sufficiente per comunicazioni
-- **Età minima**: 16 anni (con eccezioni)
-- **Codice Morse**: Non richiesto (CEPT 1, 2, 3)
+- **Validità**: Riconosciuta in tutti i paesi aderenti alla Raccomandazione
+- **Codice Morse**: Non richiesto per l'esame dal 2003
+- **Esame HAREC**: Copre tecnica, regolamentazione e pratica operativa
 
 ### Diagramma Classi CEPT
 ```mermaid
 graph TD;
-    Licenza["Licenza<br>Radioamatore"] --> CEPT_Novice["CEPT Novice<br>🔰<br>100W limitato"];
-    Licenza --> CEPT_1["CEPT 1<br>📻<br>100W completo"];
-    Licenza --> CEPT_2["CEPT 2<br>🔊<br>750W completo"];
-    Licenza --> CEPT_3["CEPT 3<br>⚡<br>Potenza illimitata"];
-    CEPT_Novice --> Limitato["Bande limitate<br>HF parziali"];
-    CEPT_1 --> Completo["Tutte le bande<br>HF + VHF/UHF"];
-    CEPT_2 --> AltaPotenza["Alta potenza<br>fino 750W"];
-    CEPT_3 --> Illimitato["Nessun limite<br>di potenza"];
+    Licenza["Licenza<br>Radioamatore<br>CEPT"] --> HAREC["CEPT HAREC<br>📻<br>Licenza piena"];
+    Licenza --> Novice["CEPT Novice<br>🔰<br>Licenza base"];
+    HAREC --> TutteBande["Tutte le bande<br>radioamatore"];
+    HAREC --> TR6101["Uso temporaneo<br>T/R 61-01"];
+    Novice --> Limitato["Bande limitate<br>Potenza ridotta"];
+    Novice --> ERC0506["Uso temporaneo<br>ERC/REC 05-06"];
 ```
 
 ## 🗺️ Raccomandazione TR 61-01: Utilizzo Temporaneo
@@ -83,8 +80,8 @@ La **Raccomandazione TR 61-01** permette l'uso temporaneo delle stazioni radioam
 
 ### Esempio Pratico
 Un radioamatore italiano (IK0AAA) in vacanza in Germania:
-- Usa licenza italiana CEPT 1
-- Identificativo: DK/IK0AAA/P (P = portable)
+- Usa licenza italiana HAREC
+- Identificativo: DL/IK0AAA/P (P = portable)
 - Potenza massima: Minimo tra limiti italiani (100W) e tedeschi
 - Durata massima: 3 mesi
 
@@ -189,16 +186,16 @@ Testa le tue conoscenze sulla regolamentazione CEPT!
   <p>La CEPT permette ai radioamatori di operare temporaneamente in altri paesi europei con la propria licenza.</p>
 </details>
 
-### Domanda 2: Qual è la potenza massima per una licenza CEPT 1?
-- A) 10 W
-- B) 100 W
-- C) 750 W
-- D) Nessun limite
+### Domanda 2: Quante classi di licenza prevede il sistema CEPT?
+- A) 1
+- B) 2
+- C) 3
+- D) 4
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>B) 100 W</strong></p>
-  <p>La classe CEPT 1 permette fino a 100 W di potenza in tutte le bande radioamatore.</p>
+  <p><strong>B) 2</strong></p>
+  <p>Il sistema CEPT prevede due classi: CEPT HAREC (licenza piena) e CEPT Novice (licenza base).</p>
 </details>
 
 ### Domanda 3: Quanto tempo può durare l'utilizzo temporaneo in un paese CEPT?
@@ -225,16 +222,16 @@ Testa le tue conoscenze sulla regolamentazione CEPT!
   <p>Ad esempio: F/IK0AAA/P per un italiano in Francia.</p>
 </details>
 
-### Domanda 5: Quante classi di licenza definisce la TR 61-02?
-- A) 1
-- B) 2
-- C) 3
-- D) 4
+### Domanda 5: Quale certificato consente l'uso temporaneo secondo la T/R 61-01?
+- A) Solo CEPT Novice
+- B) HAREC
+- C) Qualsiasi licenza nazionale
+- D) Non è possibile l'uso temporaneo
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>D) 4</strong></p>
-  <p>Le classi sono: CEPT Novice, CEPT 1, CEPT 2, e CEPT 3.</p>
+  <p><strong>B) HAREC</strong></p>
+  <p>Il certificato HAREC (Harmonised Amateur Radio Examination Certificate) consente l'uso temporaneo in tutti i paesi aderenti alla T/R 61-01.</p>
 </details>
 
 ## Conclusione

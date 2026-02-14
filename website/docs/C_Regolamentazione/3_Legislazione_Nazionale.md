@@ -92,27 +92,27 @@ Il sistema italiano prevede un'unica classe di autorizzazione: la **Classe A (HA
 |---------|----------|
 | **Tipo** | Autorizzazione Generale |
 | **Classe** | A (HAREC) |
-| **Potenza massima** | Fino a 500 W |
+| **Potenza massima** | Fino a 500 W PEP |
 | **Bande** | Tutte le bande radioamatore |
 | **Codice Morse** | Non richiesto per l'esame |
 | **Validità** | 10 anni, rinnovabile |
 
 ### Limiti di Potenza per Banda
 
-La potenza massima di 500 W si applica alla maggior parte delle bande, con riduzioni su alcune bande per limitare le interferenze:
+La potenza massima di 500 W PEP si applica alla maggior parte delle bande, con riduzioni su alcune bande per limitare le interferenze:
 
 | Banda | Potenza massima | Note |
 |-------|----------------|------|
-| HF (generale) | 500 W | Potenza massima consentita |
+| HF (generale) | 500 W PEP | Potenza massima consentita |
 | Bande con restrizioni | Ridotta | Per limitare interferenze |
-| VHF/UHF | 500 W | Potenza massima consentita |
+| VHF/UHF | 500 W PEP | Potenza massima consentita |
 
 ### Diagramma Autorizzazione Generale
 ```mermaid
 graph TD;
     Esame["Esame Teorico<br>📝"] --> HAREC["Certificato HAREC<br>🏆"];
     HAREC --> AutorizzazioneGenerale["Autorizzazione Generale<br>Classe A<br>📻"];
-    AutorizzazioneGenerale --> Potenza["Potenza max 500W<br>⚡"];
+    AutorizzazioneGenerale --> Potenza["Potenza max 500W PEP<br>⚡"];
     AutorizzazioneGenerale --> Bande["Tutte le bande<br>radioamatore<br>📡"];
     AutorizzazioneGenerale --> CEPT["Riconoscimento<br>CEPT<br>🌍"];
     classDef classe fill:#0cf,stroke:#333,stroke-width:2px;
@@ -221,7 +221,7 @@ graph TD;
 ### Esempio Pratico: Attività Giornaliera
 
 Un radioamatore con Autorizzazione Generale (Classe A) può:
-- Trasmettere su 40m SSB fino a 500W
+- Trasmettere su 40m SSB fino a 500W PEP
 - Partecipare a contest internazionali
 - Costruire antenne personalizzate
 - Operare in mobilità con identificativo /M
@@ -256,14 +256,14 @@ Testa le tue conoscenze sulla legislazione italiana!
 
 ### Domanda 3: Qual è la potenza massima per l'Autorizzazione Generale (Classe A)?
 - A) 100 W
-- B) 500 W
+- B) 500 W PEP
 - C) 1000 W
 - D) Nessun limite
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>B) 500 W</strong></p>
-  <p>L'Autorizzazione Generale (Classe A - HAREC) consente una potenza massima di 500 W, con riduzioni su alcune bande per limitare le interferenze.</p>
+  <p><strong>B) 500 W PEP</strong></p>
+  <p>L'Autorizzazione Generale (Classe A - HAREC) consente una potenza massima di 500 W PEP, con riduzioni su alcune bande per limitare le interferenze.</p>
 </details>
 
 ### Domanda 4: Cosa succede se non si identifica correttamente la stazione?
