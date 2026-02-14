@@ -3,6 +3,13 @@ sidebar_position: 1
 title: "C.1 Regolamento delle Radiocomunicazioni dell'UIT: Le Regole Globali"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # C.1 Regolamento delle Radiocomunicazioni dell'UIT: Le Regole Globali 📻🌍
 
 Benvenuti nel mondo delle normative internazionali delle radiocomunicazioni! L'**Unione Internazionale delle Telecomunicazioni (UIT)** è l'organizzazione delle Nazioni Unite che coordina l'uso globale dello spettro radioelettrico. Come radioamatori, dobbiamo conoscere queste regole per operare legalmente e rispettosamente. Scopriamo insieme il quadro normativo che governa le nostre trasmissioni!

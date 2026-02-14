@@ -3,6 +3,13 @@ sidebar_position: 2
 title: "B.2 Codice Q: Il Linguaggio Universale dei Radioamatori"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # B.2 Codice Q: Il Linguaggio Universale dei Radioamatori 📻💬
 
 Benvenuti nel affascinante mondo del codice Q! Questo sistema di codici abbreviati è il linguaggio universale dei radioamatori, permettendo comunicazioni rapide ed efficienti in tutto il mondo. Nato nel telegrafo del XIX secolo, il codice Q continua a essere uno strumento essenziale per gli operatori radio. Scopriamo insieme questo sistema che rende le nostre conversazioni più veloci e precise!

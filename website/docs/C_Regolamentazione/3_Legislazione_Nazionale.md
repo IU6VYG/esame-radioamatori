@@ -3,6 +3,13 @@ sidebar_position: 3
 title: "C.3 Legislazione Nazionale: Le Regole Italiane per Radioamatori 🇮🇹"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # C.3 Legislazione Nazionale: Le Regole Italiane per Radioamatori 📻🇮🇹
 
 Benvenuti nel mondo della legislazione italiana per le radiocomunicazioni! In Italia, l'attività radioamatoriale è regolata da leggi specifiche che garantiscono un uso sicuro e ordinato dello spettro radioelettrico. Come radioamatori italiani, dobbiamo conoscere queste normative per operare legalmente e contribuire al progresso della tecnica. Scopriamo insieme il quadro legislativo che governa le nostre trasmissioni!

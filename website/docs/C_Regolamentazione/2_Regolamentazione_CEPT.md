@@ -3,6 +3,13 @@ sidebar_position: 2
 title: "C.2 Regolamentazione della CEPT: L'Europa Unita nelle Radiofrequenze 🇪🇺"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # C.2 Regolamentazione della CEPT: L'Europa Unita nelle Radiofrequenze 📻🇪🇺
 
 Benvenuti nel mondo della regolamentazione europea! La **Conferenza Europea delle Amministrazioni delle Poste e delle Telecomunicazioni (CEPT)** coordina le politiche radiocomunicative in Europa. Per i radioamatori, la CEPT significa libertà di operare temporaneamente in altri paesi europei con la propria licenza. Scopriamo insieme questo sistema che facilita le nostre attività transfrontaliere!

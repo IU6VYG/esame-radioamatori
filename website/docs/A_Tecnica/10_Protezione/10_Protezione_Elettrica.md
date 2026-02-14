@@ -3,6 +3,13 @@ sidebar_position: 1
 title: "10. Protezione Elettrica: Sicurezza Prima di Tutto"
 ---
 
+> [!WARNING]
+> Questi sono **appunti personali** e possono contenere errori o imprecisioni.
+> Non sostituiscono libri di testo o fonti ufficiali.
+> Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
+> [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
+
+
 # 10. Protezione Elettrica: Sicurezza Prima di Tutto ⚡🛡️
 
 Benvenuti nel cruciale mondo della protezione elettrica! Come radioamatori, lavoriamo con apparecchiature che possono essere pericolose se non maneggiate correttamente. La **protezione elettrica** non è solo una questione di sopravvivenza, ma anche di responsabilità verso gli altri. Scopriamo insieme come proteggere noi stessi, le nostre attrezzature e l'ambiente dalle insidie elettriche!
