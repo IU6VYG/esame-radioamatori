@@ -417,5 +417,9 @@ Testa le tue conoscenze sui piani frequenze IARU!
 
 I piani di frequenze IARU sono la colonna portante dell'ordine radioamatoriale mondiale. Senza questi piani dettagliati, l'etere sarebbe un caos di interferenze e conflitti. Rispettandoli, contribuiamo tutti a mantenere un ambiente radio pulito ed efficiente, dove ogni radioamatore può trovare il suo spazio per esplorare l'eccitante mondo delle comunicazioni! 📻📊
 
+
 ---
-<parameter name="filePath">B_Operativa/5_Piani_Frequenze_IARU.md
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione B.6** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)). Le bande di frequenza assegnate al servizio di radioamatore sono definite nel [Regolamento delle Radiocomunicazioni UIT](https://www.itu.int/hub/publication/r-reg-rr-2024/) (Art. 5).
+:::

@@ -13,7 +13,7 @@ slug: /
 
 # Esame Radioamatori
 
-Questo sito contiene materiali di studio organizzati per preparare l'esame di radioamatore. I contenuti sono estratti e strutturati dal programma ufficiale (Sub_Allegato_D_All.26.pdf), divisi in macroargomenti e argomenti specifici per facilitare lo studio.
+Questo sito contiene materiali di studio organizzati per preparare l'esame di radioamatore. I contenuti sono estratti e strutturati dal [programma ufficiale d'esame](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf) (Sub Allegato D, Allegato 26 al D.Lgs. 259/2003), divisi in macroargomenti e argomenti specifici per facilitare lo studio.
 
 ## Struttura del Progetto
 

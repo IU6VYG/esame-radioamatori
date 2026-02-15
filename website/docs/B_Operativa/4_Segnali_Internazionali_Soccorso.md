@@ -116,23 +116,29 @@ Richiedo assistenza immediata, 4 persone a bordo
 Fine messaggio
 ```
 
-## 🌍 Risoluzione UIT 640
+## 🌍 Comunicazioni di emergenza nel quadro UIT
 
-La **Risoluzione 640** dell'UIT regola l'uso delle stazioni radioamatoriali in caso di catastrofi.
+L'**Articolo 25.9A** del Regolamento delle Radiocomunicazioni incoraggia le amministrazioni a consentire alle stazioni di radioamatore di prepararsi e contribuire alle comunicazioni di soccorso in caso di calamità.
 
-### Contenuto Principale
+La **Risoluzione 646 (Rev. WRC-19)** dell'UIT disciplina nel dettaglio l'uso delle telecomunicazioni per il soccorso in caso di catastrofi.
 
-- **Autorizzazione**: Radioamatori possono assistere in emergenze
-- **Limitazioni**: Solo quando sistemi normali falliscono
-- **Coordinamento**: Con autorità nazionali competenti
-- **Frequenze**: Uso di bande radioamatoriali designate
+:::note
+Il programma d'esame menziona la "Risoluzione 640": questa risoluzione, che riguardava specificamente l'uso delle stazioni radioamatoriali in caso di catastrofi naturali, è stata **abrogata alla WRC-97**. I suoi contenuti sono oggi recepiti nell'Art. 25.9A del Regolamento e nelle Risoluzioni 646 e 647.
+:::
+
+### Contenuto Principale (Art. 25.9A e Ris. 646)
+
+- **Preparazione**: Le amministrazioni sono incoraggiate a permettere ai radioamatori di prepararsi per le emergenze
+- **Attivazione**: Quando i sistemi normali di comunicazione sono compromessi
+- **Coordinamento**: Con le autorità nazionali competenti
+- **Frequenze**: Uso delle bande radioamatoriali designate
 
 ### Condizioni di Utilizzo
 
 1. **Emergenza reale**: Catastrofe naturale o situazione critica
-2. **Autorizzazione**: Da autorità competenti (Protezione Civile, etc.)
+2. **Autorizzazione**: Da autorità competenti (in Italia: Protezione Civile — Art. 141 D.Lgs. 259/2003)
 3. **Coordinamento**: Con centri di emergenza ufficiali
-4. **Limitato nel tempo**: Solo per durata emergenza
+4. **Limitato nel tempo**: Solo per la durata dell'emergenza
 
 ## 🌊 Utilizzo Internazionale in Catastrofi
 
@@ -297,16 +303,16 @@ Testa le tue conoscenze sui segnali internazionali di soccorso!
   <p>MAYDAY indica una situazione di pericolo imminente che richiede assistenza immediata.</p>
 </details>
 
-### Domanda 3: Quale risoluzione UIT regola l'uso dei radioamatori in catastrofi?
-- A) Risoluzione 640
-- B) Risoluzione 500
-- C) Risoluzione 200
-- D) Risoluzione 100
+### Domanda 3: Quale risoluzione UIT disciplina oggi l'uso delle telecomunicazioni per il soccorso in caso di catastrofi?
+- A) Risoluzione 640 (abrogata alla WRC-97)
+- B) Risoluzione 646 (Rev. WRC-19)
+- C) Risoluzione 500
+- D) Risoluzione 200
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>A) Risoluzione 640</strong></p>
-  <p>La Risoluzione 640 dell'UIT autorizza i radioamatori ad assistere in emergenze quando i sistemi normali falliscono.</p>
+  <p><strong>B) Risoluzione 646 (Rev. WRC-19)</strong></p>
+  <p>La Risoluzione 646 dell'UIT disciplina l'uso delle telecomunicazioni per il soccorso in caso di catastrofi. Il programma d'esame menziona la Risoluzione 640, che è stata abrogata alla WRC-97; i suoi contenuti sono confluiti nella Ris. 646 e nell'Art. 25.9A del Regolamento.</p>
 </details>
 
 ### Domanda 4: Quale segnale si usa per situazioni urgenti ma non di pericolo imminente?
@@ -337,5 +343,9 @@ Testa le tue conoscenze sui segnali internazionali di soccorso!
 
 I segnali internazionali di soccorso rappresentano il ponte tra la tecnologia radioamatoriale e il salvataggio di vite umane. Come radioamatori, siamo parte di una rete globale di solidarietà che può fare la differenza in momenti critici. Conoscere questi segnali, rispettare le procedure e prepararsi adeguatamente significa essere pronti a servire la comunità quando più ne ha bisogno. L'etere non è solo comunicazione, ma anche protezione e soccorso! 🚨📻
 
+
 ---
-<parameter name="filePath">B_Operativa/3_Segnali_Internazionali_Soccorso.md
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione B.4** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)). Per le comunicazioni di emergenza si vedano il [Regolamento delle Radiocomunicazioni UIT](https://www.itu.int/hub/publication/r-reg-rr-2024/) (Art. 25.9A) e la [Risoluzione 646 (Rev. WRC-19)](https://www.itu.int/dms_pub/itu-r/oth/0C/0A/R0C0A00000F00133PDFE.pdf).
+:::

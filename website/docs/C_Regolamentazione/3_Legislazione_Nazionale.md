@@ -12,7 +12,7 @@ title: "C.3 Legislazione Nazionale: Le Regole Italiane per Radioamatori 🇮🇹
 
 # C.3 Legislazione Nazionale: Le Regole Italiane per Radioamatori 📻🇮🇹
 
-Benvenuti nel mondo della legislazione italiana per le radiocomunicazioni! In Italia, l'attività radioamatoriale è regolata da leggi specifiche che garantiscono un uso sicuro e ordinato dello spettro radioelettrico. Come radioamatori italiani, dobbiamo conoscere queste normative per operare legalmente e contribuire al progresso della tecnica. Scopriamo insieme il quadro legislativo che governa le nostre trasmissioni!
+Benvenuti nel mondo della legislazione italiana per le radiocomunicazioni! In Italia, l'attività radioamatoriale è regolata dal **D.Lgs. 259/2003** (Codice delle comunicazioni elettroniche), significativamente riformato dal **D.Lgs. 207/2021** (recepimento della Direttiva UE 2018/1972) e ulteriormente modificato dal **D.Lgs. 48/2024**. Come radioamatori italiani, dobbiamo conoscere queste normative per operare legalmente e contribuire al progresso della tecnica. Scopriamo insieme il quadro legislativo che governa le nostre trasmissioni!
 
 ## 🏛️ Quadro Legislativo Italiano
 
@@ -20,10 +20,11 @@ La legislazione italiana per le radiocomunicazioni si basa su diversi livelli no
 
 ### Leggi Fondamentali
 
-1. **Codice delle Comunicazioni Elettroniche** (Decreto Legislativo 259/2003)
-2. **Decreto del Presidente della Repubblica 159/2001**: Regolamento di attuazione
-3. **Decreto Ministeriale**: Procedure per esami e licenze
-4. **Norme tecniche**: Specifiche tecniche per apparecchiature
+1. **Codice delle Comunicazioni Elettroniche** (D.Lgs. 259/2003), aggiornato con:
+   - **D.Lgs. 207/2021** — recepimento della Direttiva (UE) 2018/1972 (Codice europeo delle comunicazioni elettroniche)
+   - **D.Lgs. 48/2024** — disposizioni correttive al D.Lgs. 207/2021
+2. **Allegato n. 26 al D.Lgs. 259/2003**: Disciplina dell'attività radioamatoriale (norme tecniche e procedurali)
+3. **Decreti Ministeriali**: Procedure per esami e licenze (es. DM 21 luglio 2005)
 
 ### Autorità Competente
 
@@ -36,87 +37,93 @@ La legislazione italiana per le radiocomunicazioni si basa su diversi livelli no
 ```mermaid
 graph TD;
     Costituzione["Costituzione<br>🇮🇹"] --> CodiceComunicazioni["Codice Comunicazioni<br>D.Lgs 259/2003"];
-    CodiceComunicazioni --> DPR159["DPR 159/2001<br>Regolamento"];
-    DPR159 --> DecretiMinisteriali["Decreti Ministeriali<br>Procedure"];
-    DecretiMinisteriali --> Licenza["Licenza<br>Radioamatore"];
+    CodiceComunicazioni --> Riforma2021["D.Lgs. 207/2021<br>Riforma"];
+    CodiceComunicazioni --> Correttivo2024["D.Lgs. 48/2024<br>Correttivo"];
+    CodiceComunicazioni --> Allegato26["Allegato n. 26<br>Disciplina radioamatoriale"];
+    Allegato26 --> Licenza["Autorizzazione<br>Radioamatore"];
     ARI["ARI<br>Associazione"] --> Supporto["Supporto Tecnico<br>📚"];
     Supporto --> Licenza;
     classDef legge fill:#0f0,stroke:#333,stroke-width:2px;
-    class CodiceComunicazioni,DPR159 legge;
+    class CodiceComunicazioni,Riforma2021,Correttivo2024 legge;
 ```
 
 ## 📋 Requisiti per l'Autorizzazione Generale
 
 Per ottenere l'Autorizzazione Generale di radioamatore in Italia sono necessari specifici requisiti.
 
-### Requisiti Generali
+### Requisiti (Art. 137 D.Lgs. 259/2003)
 
-- **Età minima**: 14 anni (con autorizzazione genitori se minorenne)
-- **Cittadinanza**: Italiana o comunitaria (possibili eccezioni)
-- **Capacità giuridica**: Piena capacità di agire
-- **Assenza condanne**: Non aver riportato condanne penali gravi
+- **Età minima**: 14 anni (con dichiarazione di consenso e assunzione di responsabilità civile da parte di chi esercita la potestà o la tutela — Art. 138 comma 2 lett. b)
+- **Cittadinanza**: UE o SEE, oppure paesi con accordi di reciprocità, oppure residenti in Italia (Art. 137 comma 1 lett. a)
+- **Patente**: Possesso della patente di operatore di classe A o classe N (Art. 136)
+- **Assenza condanne**: Non aver riportato condanne per delitti non colposi a pena restrittiva superiore a due anni; non essere sottoposti a misure di sicurezza e prevenzione, salvo riabilitazione (Art. 137 comma 1 lett. d)
 
-### Esame Richiesto
+### Esame e Patente (Art. 136)
 
-L'esame per l'Autorizzazione Generale (Classe A - HAREC) consiste in una prova teorica che copre:
+Per il conseguimento dell'autorizzazione generale è necessario possedere la **patente di operatore** (Art. 136 comma 1), ottenibile superando le relative prove di esame:
 
-- Legislazione e regolamentazione
-- Propagazione e antenne
-- Elettronica e misure
-- Pratica operativa
+- **Classe A (HAREC)**: Esame completo secondo la Raccomandazione CEPT T/R 61-02 — copre tecnica, regolamentazione e pratica operativa. Il superamento consente il rilascio del certificato **HAREC**, riconosciuto in tutti i paesi CEPT
+- **Classe N (Novice)**: Esame di livello base secondo la Raccomandazione CEPT ECC/REC (05)06 — criteri e modalità stabiliti con decreto del Ministro
 
-Il superamento dell'esame consente il rilascio del certificato **HAREC** (Harmonised Amateur Radio Examination Certificate), riconosciuto in tutti i paesi CEPT.
+Il Ministero può affidare l'organizzazione e lo svolgimento degli esami alle **associazioni dei radioamatori legalmente riconosciute** (Art. 136 comma 3).
 
 ### Diagramma Procedure Autorizzazione
 ```mermaid
 graph TD;
-    Candidato["Candidato<br>👤"] --> Requisiti["Verifica<br>Requisiti"];
+    Candidato["Candidato<br>👤"] --> Requisiti["Verifica Requisiti<br>Art. 137"];
     Requisiti --> Corso["Corso<br>Preparatorio<br>📚"];
-    Corso --> EsameTeorico["Esame<br>Teorico<br>📝"];
-    EsameTeorico --> Autorizzazione["Autorizzazione<br>Generale<br>Classe A HAREC<br>📻"];
+    Corso --> Esame["Esame<br>📝"];
+    Esame --> Patente["Patente<br>Art. 136"];
+    Patente --> ClasseA["Autorizzazione<br>Classe A HAREC<br>📻"];
+    Patente --> ClasseN["Autorizzazione<br>Classe N Novice<br>🔰"];
+    ClasseA --> Dichiarazione["Dichiarazione<br>Art. 138"];
+    ClasseN --> Dichiarazione;
+    Dichiarazione --> Nominativo["Nominativo<br>Art. 139"];
     Requisiti --> No["Requisiti non<br>soddisfatti<br>❌"];
-    EsameTeorico --> Ripetizione["Ripetizione<br>esame<br>🔄"];
     classDef esame fill:#f90,stroke:#333,stroke-width:2px;
-    class EsameTeorico esame;
+    class Esame esame;
     classDef successo fill:#0f0,stroke:#333,stroke-width:2px;
-    class Autorizzazione successo;
+    class ClasseA,ClasseN successo;
 ```
 
-## 📊 Autorizzazione Generale - Classe A (HAREC)
+## 📊 Tipi di Autorizzazione (Art. 135 D.Lgs. 259/2003)
 
-Il sistema italiano prevede un'unica classe di autorizzazione: la **Classe A (HAREC)**.
+Il sistema italiano prevede **due classi** di autorizzazione generale (introdotte con la riforma del D.Lgs. 207/2021):
 
-### Caratteristiche dell'Autorizzazione Generale
+### Tabella delle Classi
 
-| Aspetto | Dettagli |
-|---------|----------|
-| **Tipo** | Autorizzazione Generale |
-| **Classe** | A (HAREC) |
-| **Potenza massima** | Fino a 500 W PEP |
-| **Bande** | Tutte le bande radioamatore |
-| **Codice Morse** | Non richiesto per l'esame |
-| **Validità** | 10 anni, rinnovabile |
+| Aspetto | Classe A (HAREC) | Classe N (Novice) |
+|---------|------------------|-------------------|
+| **Raccomandazione CEPT** | T/R 61-01 | ECC/REC (05)06 |
+| **Esame** | Completo (T/R 61-02 HAREC) | Livello base |
+| **Bande** | Tutte le bande radioamatore | Limitate (da definire con DM) |
+| **Potenza massima** | Fino a 500 W PEP | Ridotta (da definire con DM) |
+| **Codice Morse** | Non richiesto | Non richiesto |
+| **Uso temporaneo CEPT** | T/R 61-01 | ERC/REC 05-06 |
 
-### Limiti di Potenza per Banda
+:::note
+La Classe N è stata introdotta dall'Art. 135 comma 1 lett. b) del D.Lgs. 259/2003 (come modificato dal D.Lgs. 207/2021). I criteri e le modalità per il conseguimento della patente di classe N sono demandati a un decreto ministeriale (Art. 136 comma 1).
+:::
 
-La potenza massima di 500 W PEP si applica alla maggior parte delle bande, con riduzioni su alcune bande per limitare le interferenze:
+### Bande e Potenza (Art. 135 comma 2)
 
-| Banda | Potenza massima | Note |
-|-------|----------------|------|
-| HF (generale) | 500 W PEP | Potenza massima consentita |
-| Bande con restrizioni | Ridotta | Per limitare interferenze |
-| VHF/UHF | 500 W PEP | Potenza massima consentita |
+Il titolare di autorizzazione generale è abilitato all'impiego di tutte le bande attribuite al servizio di radioamatore dal Piano Nazionale di Ripartizione delle Radiofrequenze, con l'osservanza e nei limiti stabiliti dall'Allegato n. 26.
 
 ### Diagramma Autorizzazione Generale
 ```mermaid
 graph TD;
-    Esame["Esame Teorico<br>📝"] --> HAREC["Certificato HAREC<br>🏆"];
-    HAREC --> AutorizzazioneGenerale["Autorizzazione Generale<br>Classe A<br>📻"];
-    AutorizzazioneGenerale --> Potenza["Potenza max 500W PEP<br>⚡"];
-    AutorizzazioneGenerale --> Bande["Tutte le bande<br>radioamatore<br>📡"];
-    AutorizzazioneGenerale --> CEPT["Riconoscimento<br>CEPT<br>🌍"];
-    classDef classe fill:#0cf,stroke:#333,stroke-width:2px;
-    class AutorizzazioneGenerale classe;
+    Esame["Esame Teorico<br>📝"] --> ClasseA["Classe A<br>HAREC<br>📻"];
+    Esame --> ClasseN["Classe N<br>Novice<br>🔰"];
+    ClasseA --> PotenzaA["Potenza max 500W PEP<br>⚡"];
+    ClasseA --> BandeA["Tutte le bande<br>radioamatore<br>📡"];
+    ClasseA --> CEPT["Riconoscimento<br>CEPT T/R 61-01<br>🌍"];
+    ClasseN --> PotenzaN["Potenza ridotta<br>⚡"];
+    ClasseN --> BandeN["Bande limitate<br>📡"];
+    ClasseN --> CEPTNovice["Riconoscimento<br>ECC/REC 05-06<br>🌍"];
+    classDef classeA fill:#0cf,stroke:#333,stroke-width:2px;
+    class ClasseA classeA;
+    classDef classeN fill:#0f0,stroke:#333,stroke-width:2px;
+    class ClasseN classeN;
 ```
 
 ## 📝 Registro di Stazione
@@ -178,21 +185,14 @@ graph TD;
 4. **Aggiornamenti**: Mantenimento licenza valida
 5. **Collaborazione**: Con autorità e associazioni
 
-### Responsabilità Penali
+### Sanzioni (Art. 30 e seguenti D.Lgs. 259/2003)
 
+Il D.Lgs. 259/2003 prevede sanzioni significative per le violazioni:
+
+- **Installazione/esercizio senza autorizzazione generale**: Sanzione amministrativa pecuniaria da €30.000 a €2.500.000 (Art. 30 comma 3)
+- **Violazioni gravi o reiterate** delle condizioni dell'autorizzazione generale: Sanzione da €30.000 a €600.000 (Art. 30 comma 10)
 - **Interferenze dolose**: Sanzioni amministrative e penali
-- **Uso non autorizzato**: Confisca apparecchiature
-- **False dichiarazioni**: Revoca licenza
-- **Attività commerciale**: Violazione legge
-
-### Sanzioni Amministrative
-
-| Violazione | Sanzione |
-|------------|----------|
-| Mancata identificazione | € 200-500 |
-| Interferenza | € 500-2000 |
-| Uso non autorizzato | € 1000-5000 |
-| Ripetute violazioni | Revoca licenza |
+- **Calamità** (Art. 141): L'autorità competente può autorizzare le stazioni di radioamatore a effettuare collegamenti speciali oltre i limiti stabiliti dall'Art. 134
 
 ## 🔄 Rinnovo e Aggiornamenti
 
@@ -218,13 +218,24 @@ graph TD;
 - **Partecipazione**: Gare e attività internazionali
 - **Riconoscimento CEPT**: Utilizzo temporaneo in Europa
 
+### Definizione dell'Attività di Radioamatore (Art. 134)
+
+L'attività di radioamatore consiste in un servizio di:
+- **Istruzione individuale** (self-training)
+- **Intercomunicazione**
+- **Studio tecnico**
+
+svolto in linguaggio chiaro o con codici internazionalmente ammessi, esclusivamente su mezzo radioelettrico (anche via satellite), da persone autorizzate che si interessano della tecnica della radioelettricità a titolo personale senza interesse economico.
+
+L'attività può essere svolta fuori sede con apparato portatile anche su mezzo mobile, **escluso quello aereo** (Art. 134 comma 2). L'attività di **solo ascolto** sulle frequenze radioamatoriali è **libera** (Art. 134 comma 4).
+
 ### Esempio Pratico: Attività Giornaliera
 
 Un radioamatore con Autorizzazione Generale (Classe A) può:
 - Trasmettere su 40m SSB fino a 500W PEP
 - Partecipare a contest internazionali
-- Costruire antenne personalizzate
-- Operare in mobilità con identificativo /M
+- Costruire e modificare apparecchiature (studio tecnico)
+- Operare in mobilità con identificativo /M (escluso mezzo aereo)
 
 ## 🧠 Quiz di Ripasso
 
@@ -254,7 +265,19 @@ Testa le tue conoscenze sulla legislazione italiana!
   <p>Il registro di stazione deve essere conservato per almeno 3 anni ed è soggetto a controlli delle autorità.</p>
 </details>
 
-### Domanda 3: Qual è la potenza massima per l'Autorizzazione Generale (Classe A)?
+### Domanda 3: Quante classi di autorizzazione prevede il D.Lgs. 259/2003 dopo la riforma 2021?
+- A) Una sola (Classe A)
+- B) Due (Classe A e Classe N)
+- C) Tre (Classe A, B e C)
+- D) Quattro
+
+<details>
+  <summary>Risposta</summary>
+  <p><strong>B) Due (Classe A e Classe N)</strong></p>
+  <p>L'Art. 135 prevede due classi: Classe A (HAREC, ai sensi della T/R 61-01) e Classe N (Novice, ai sensi della ECC/REC 05-06).</p>
+</details>
+
+### Domanda 4: Qual è la potenza massima per l'Autorizzazione Generale di Classe A?
 - A) 100 W
 - B) 500 W PEP
 - C) 1000 W
@@ -263,19 +286,7 @@ Testa le tue conoscenze sulla legislazione italiana!
 <details>
   <summary>Risposta</summary>
   <p><strong>B) 500 W PEP</strong></p>
-  <p>L'Autorizzazione Generale (Classe A - HAREC) consente una potenza massima di 500 W PEP, con riduzioni su alcune bande per limitare le interferenze.</p>
-</details>
-
-### Domanda 4: Cosa succede se non si identifica correttamente la stazione?
-- A) Niente
-- B) Sanzione amministrativa
-- C) Revoca immediata
-- D) Confisca apparecchiature
-
-<details>
-  <summary>Risposta</summary>
-  <p><strong>B) Sanzione amministrativa</strong></p>
-  <p>La mancata identificazione comporta sanzioni da 200 a 500 euro.</p>
+  <p>L'Autorizzazione Generale di Classe A (HAREC) consente una potenza massima di 500 W PEP.</p>
 </details>
 
 ### Domanda 5: Quale autorità rilascia le autorizzazioni radioamatore in Italia?
@@ -294,5 +305,15 @@ Testa le tue conoscenze sulla legislazione italiana!
 
 La legislazione italiana garantisce un quadro sicuro e moderno per l'attività radioamatoriale. Conoscere e rispettare queste norme non è solo un obbligo legale, ma anche una garanzia di qualità e sicurezza per tutta la comunità radioamatoriale italiana. Operiamo sempre nel rispetto delle regole per un'etere pulito e ordinato! 📻🇮🇹
 
+
 ---
-<parameter name="filePath">C_Regolamentazione/3_Legislazione_Nazionale.md
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione C.3** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)).
+
+Fonti primarie:
+- [D.Lgs. 259/2003 — Codice delle comunicazioni elettroniche](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-08-01;259) (testo vigente su Normattiva) — Capo VII "Radioamatori" (Art. 134–144)
+- [D.Lgs. 207/2021](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2021-11-08;207) — Recepimento Direttiva (UE) 2018/1972 (riforma significativa del Capo Radioamatori, introduzione Classe N)
+- [D.Lgs. 48/2024](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-03-24;48) — Disposizioni correttive al D.Lgs. 207/2021
+- [Allegato n. 26 — Disciplina dell'attività radioamatoriale](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf) (testo vigente MIMIT)
+:::

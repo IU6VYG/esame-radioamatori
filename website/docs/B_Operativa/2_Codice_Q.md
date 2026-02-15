@@ -291,6 +291,3 @@ Testa le tue conoscenze sul codice Q!
 ## Conclusione
 
 Il codice Q è molto più di un semplice sistema di abbreviazioni: è il linguaggio che unisce radioamatori di tutto il mondo. Dalla sua nascita nel telegrafo alla sua evoluzione digitale, continua a facilitare comunicazioni efficienti e precise. Imparare il codice Q significa diventare parte di una tradizione centenaria che rende l'etere più comprensibile per tutti! 📻💬
-
----
-<parameter name="filePath">B_Operativa/1_Codice_Q.md

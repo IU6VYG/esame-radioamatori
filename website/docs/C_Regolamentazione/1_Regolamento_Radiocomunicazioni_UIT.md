@@ -42,31 +42,35 @@ graph TD;
 
 Il **Regolamento delle Radiocomunicazioni** definisce il servizio di radioamatore all'Articolo 1.56:
 
-*"Servizio di radiocomunicazioni destinato ad essere utilizzato esclusivamente a scopo personale, senza scopo di lucro, da persone debitamente autorizzate che si interessano alla tecnica delle radiocomunicazioni semplicemente per proprio diletto e senza fini finanziari."*
+> *"Amateur service: A radiocommunication service for the purpose of self-training, intercommunication and technical investigations carried out by amateurs, that is, by duly authorized persons interested in radio technique solely with a personal aim and without pecuniary interest."*
+
+In italiano (come recepito dall'Art. 134 del D.Lgs. 259/2003): un servizio di istruzione individuale, di intercomunicazione e di studio tecnico, effettuato da persone debitamente autorizzate che si interessano della tecnica della radioelettricità a titolo esclusivamente personale senza alcun interesse di natura economica.
 
 ### Caratteristiche Principali
 
-- **Scopo personale**: Solo per diletto, non commerciale
-- **Senza lucro**: Nessun guadagno finanziario
-- **Tecnica**: Interesse per la radiotecnica
-- **Autorizzazione**: Richiede licenza valida
+- **Tre finalità**: Istruzione individuale (self-training), intercomunicazione e studio tecnico (technical investigations)
+- **Senza lucro**: Nessun interesse economico (*without pecuniary interest*)
+- **Autorizzazione**: Richiede licenza valida (*duly authorized persons*)
 
 ### Servizio di Radioamatore via Satellite
 
 L'Articolo 1.57 definisce il servizio di radioamatore via satellite:
 
-*"Servizio di radiocomunicazioni nel quale le stazioni spaziali possono essere utilizzate da radioamatori."*
+> *"Amateur-satellite service: A radiocommunication service using space stations on earth satellites for the same purposes as those of the amateur service."*
+
+Servizio di radiocomunicazioni che utilizza stazioni spaziali su satelliti terrestri per gli stessi scopi del servizio di radioamatore.
 
 **Caratteristiche:**
-- Utilizzo di satelliti per comunicazioni radioamatore
+- Stessi scopi e regole del servizio di radioamatore
+- Utilizzo di stazioni spaziali su satelliti terrestri
 - Coordinamento internazionale necessario
 - Bande dedicate (es. 145/435 MHz)
 
 ## 🏠 Definizione della Stazione di Radioamatore
 
-L'Articolo 1.81 del Regolamento delle Radiocomunicazioni definisce la stazione di radioamatore:
+L'Articolo 1.96 del Regolamento delle Radiocomunicazioni definisce la stazione di radioamatore:
 
-*"Una stazione del servizio di radioamatore."* (*"A station in the amateur service."*)
+> *"Amateur station: A station in the amateur service."*
 
 Si tratta di una definizione volutamente generale: qualsiasi stazione che operi nell'ambito del servizio di radioamatore come definito dall'Art. 1.56.
 
@@ -347,5 +351,13 @@ Testa le tue conoscenze sul Regolamento UIT!
 
 Il Regolamento delle Radiocomunicazioni dell'UIT fornisce il quadro globale per le attività radioamatoriali. Conoscere queste norme garantisce operazioni sicure, rispettose e legali in tutto il mondo. Come radioamatori, siamo ambasciatori della buona pratica nelle radiocomunicazioni! 📻🌍
 
+
 ---
-<parameter name="filePath">C_Regolamentazione/1_Regolamento_Radiocomunicazioni_UIT.md
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione C.1** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)).
+
+Fonti primarie:
+- [Regolamento delle Radiocomunicazioni UIT — Edizione 2024](https://www.itu.int/hub/publication/r-reg-rr-2024/) — Articoli 1 (definizioni), 5 (allocazione frequenze) e 25 (servizio di radioamatore)
+- [Pagina ITU dedicata al Servizio di Radioamatore](https://life.itu.int/radioclub/ars.htm)
+:::
