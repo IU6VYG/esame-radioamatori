@@ -64,7 +64,7 @@ Servizio di radiocomunicazioni che utilizza stazioni spaziali su satelliti terre
 - Stessi scopi e regole del servizio di radioamatore
 - Utilizzo di stazioni spaziali su satelliti terrestri
 - Coordinamento internazionale necessario
-- Bande dedicate (es. 145/435 MHz)
+- Bande dedicate (es. 144–146 MHz, 435–438 MHz)
 
 ## 🏠 Definizione della Stazione di Radioamatore
 
@@ -181,29 +181,51 @@ Il Regolamento delle Radiocomunicazioni (Articolo 5) assegna bande specifiche al
 
 La tabella seguente riporta le allocazioni secondo il Regolamento delle Radiocomunicazioni (edizione 2024) per la **Regione 1** (Europa, Africa, Medio Oriente).
 
+#### Bande HF/MF/LF
+
 | Banda | Frequenza | Statuto (Reg. 1) | Note |
 |-------|-----------|-------------------|------|
-| 2200m | 135.7–137.8 kHz | Secondario | Bassa frequenza, portata limitata |
-| 630m | 472–479 kHz | Secondario | Banda MF |
-| 160m | 1.810–2.000 MHz | Primario | "Top band", DX notturno |
-| 80m | 3.500–3.800 MHz | Primario | Comunicazioni regionali/notturne |
-| 60m | 5.351–5.366 MHz | Secondario | Banda relativamente recente |
-| 40m | 7.000–7.200 MHz | Primario | Molto popolare, DX giorno/notte |
-| 30m | 10.100–10.150 MHz | Secondario | Solo modi digitali e CW |
-| 20m | 14.000–14.350 MHz | Primario | Banda DX per eccellenza |
-| 17m | 18.068–18.168 MHz | Primario | Banda WARC |
-| 15m | 21.000–21.450 MHz | Primario | Buono per DX con propagazione |
-| 12m | 24.890–24.990 MHz | Primario | Banda WARC |
+| 2200m | 135.7–137.8 kHz | Secondario | Max 1 W EIRP (nota 5.67A) |
+| 630m | 472–479 kHz | Secondario | Max 1 W EIRP (nota 5.80A) |
+| 160m | 1.810–1.850 kHz | Primario | "Top band", DX notturno |
+| 80m | 3.500–3.800 kHz | Primario | Comunicazioni regionali/notturne |
+| 60m | 5.351,5–5.366,5 kHz | Secondario | Max 15 W EIRP (nota 5.133B) |
+| 40m | 7.000–7.200 kHz | Primario | Molto popolare, DX giorno/notte |
+| 30m | 10.100–10.150 kHz | Secondario | Solo modi digitali e CW |
+| 20m | 14.000–14.350 kHz | Primario | Banda DX per eccellenza |
+| 17m | 18.068–18.168 kHz | Primario | Banda WARC |
+| 15m | 21.000–21.450 kHz | Primario | Buono per DX con propagazione |
+| 12m | 24.890–24.990 kHz | Primario | Banda WARC |
 | 10m | 28.000–29.700 MHz | Primario | Propagazione sporadica E/F2 |
 
-### Diagramma Bande HF
+#### Bande VHF/UHF/SHF
+
+| Banda | Frequenza | Statuto (Reg. 1) | Note |
+|-------|-----------|-------------------|------|
+| 6m | 50–52 MHz | Secondario | Protezione broadcasting (nota 5.166B) |
+| 2m | 144–146 MHz | Primario | Anche radioamatore via satellite |
+| 70cm | 430–440 MHz | Primario | Condivisa con radiolocalizzazione |
+| 23cm | 1.240–1.300 MHz | Secondario | Protezione RNSS (nota 5.332A) |
+| 13cm | 2.300–2.450 MHz | Secondario | Condivisa con altri servizi |
+| 5cm | 5.650–5.850 MHz | Secondario | Vari segmenti, anche satellite |
+
+:::note[🇮🇹 Differenze nazionali]
+Il **Piano Nazionale di Ripartizione delle Frequenze (PNRF)**, adottato con Decreto 31 agosto 2022, può restringere le allocazioni ITU. Differenze significative per l'Italia:
+- **160m**: In Italia solo **1.830–1.850 kHz** è primario (l'ITU Reg. 1 assegna 1.810–1.850)
+- **80m**: In Italia il servizio radioamatore è **secondario** (nell'ITU Reg. 1 è primario)
+- **6m (50–52 MHz)**: Secondario. Le stazioni non devono disturbare i radar wind profiler (nota 5.166C)
+- **2m**: Nota 69 PNRF: 144–145,8 MHz uso esclusivo radioamatore; 145,8–146 MHz uso esclusivo radioamatore via satellite
+- **70cm**: Allocazione frammentata: 430–434 MHz secondario, 435–436 MHz primario (anche satellite), 436–438 MHz secondario
+:::
+
+### Diagramma Bande Radioamatore (Regione 1)
 ```mermaid
 graph LR;
-    HF["Bande HF/MF/LF<br>Radioamatore"] --> Banda2200["2200m<br>135 kHz"];
+    HF["Bande HF/MF/LF"] --> Banda2200["2200m<br>135 kHz"];
     HF --> Banda630["630m<br>472 kHz"];
-    HF --> Banda160["160m<br>1.8 MHz"];
+    HF --> Banda160["160m<br>1.81 MHz"];
     HF --> Banda80["80m<br>3.5 MHz"];
-    HF --> Banda60["60m<br>5.3 MHz"];
+    HF --> Banda60["60m<br>5.35 MHz"];
     HF --> Banda40["40m<br>7 MHz"];
     HF --> Banda30["30m<br>10.1 MHz"];
     HF --> Banda20["20m<br>14 MHz"];
@@ -211,7 +233,11 @@ graph LR;
     HF --> Banda15["15m<br>21 MHz"];
     HF --> Banda12["12m<br>24.9 MHz"];
     HF --> Banda10["10m<br>28 MHz"];
-    Banda160 --> Primario["Primario<br>🟢"];
+    VHF["Bande VHF/UHF/SHF"] --> Banda6m["6m<br>50 MHz"];
+    VHF --> Banda2m["2m<br>144 MHz"];
+    VHF --> Banda70cm["70cm<br>430 MHz"];
+    VHF --> Banda23cm["23cm<br>1240 MHz"];
+    Banda160 --> Primario["Primario"];
     Banda80 --> Primario;
     Banda40 --> Primario;
     Banda20 --> Primario;
@@ -219,10 +245,14 @@ graph LR;
     Banda15 --> Primario;
     Banda12 --> Primario;
     Banda10 --> Primario;
-    Banda2200 --> Secondario["Secondario<br>🟡"];
+    Banda2m --> Primario;
+    Banda70cm --> Primario;
+    Banda2200 --> Secondario["Secondario"];
     Banda630 --> Secondario;
     Banda60 --> Secondario;
     Banda30 --> Secondario;
+    Banda6m --> Secondario;
+    Banda23cm --> Secondario;
 ```
 
 ## 🌍 Regioni Radio dell'UIT
@@ -360,4 +390,5 @@ Questa pagina tratta gli argomenti della **Sezione C.1** del Programma d'esame p
 Fonti primarie:
 - [Regolamento delle Radiocomunicazioni UIT — Edizione 2024](https://www.itu.int/hub/publication/r-reg-rr-2024/) — Articoli 1 (definizioni), 5 (allocazione frequenze) e 25 (servizio di radioamatore)
 - [Pagina ITU dedicata al Servizio di Radioamatore](https://life.itu.int/radioclub/ars.htm)
+- Piano Nazionale di Ripartizione delle Frequenze (PNRF) — Decreto 31 agosto 2022 (per le differenze nazionali rispetto alle allocazioni ITU Regione 1)
 :::

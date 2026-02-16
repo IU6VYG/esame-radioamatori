@@ -54,10 +54,10 @@ def plot_hf_bands():
     # Dati bande HF (Regione 1 - IARU) con frequenze tipiche
     bands = [
         # (nome, freq_min, freq_max, lambda, segmenti)
-        ('160m', 1.8, 2.0, '160m (Top Band)', [
-            (1.800, 1.838, 'CW', 'CW/QRP'),
-            (1.838, 1.843, 'Digi', 'Digi'),
-            (1.843, 2.000, 'SSB', 'Fonia'),
+        ('160m', 1.810, 1.850, '160m (Top Band)', [
+            (1.810, 1.838, 'CW', 'CW/QRP'),
+            (1.838, 1.840, 'Digi', 'Digi'),
+            (1.840, 1.850, 'SSB', 'Fonia'),
         ]),
         ('80m', 3.5, 3.8, '80m (Notte)', [
             (3.500, 3.570, 'CW', 'CW'),
@@ -345,8 +345,8 @@ def plot_power_limits():
 
     # Dati potenze Italia (classe A)
     power_data = [
-        ('160m', '1.8-2.0 MHz', 500, 'Si'),
-        ('80m', '3.5-3.8 MHz', 500, 'Si'),
+        ('160m', '1.830-1.850 kHz', 500, 'PNRF: solo 1830-1850'),
+        ('80m', '3.5-3.8 MHz', 500, 'PNRF: secondario'),
         ('60m', '5.3515-5.3665 MHz', 15, 'Canalizzato'),
         ('40m', '7.0-7.2 MHz', 500, 'Si'),
         ('30m', '10.1-10.15 MHz', 500, 'No SSB'),
@@ -448,7 +448,7 @@ def plot_bands_by_modulation():
     # Raggruppamento per modulazione
     modulations = {
         'CW (A1A)\nTelegrafia': [
-            ('160m', 1.810, 1.838),
+            ('160m', 1.810, 1.840),
             ('80m', 3.500, 3.570),
             ('40m', 7.000, 7.040),
             ('30m', 10.100, 10.130),
@@ -461,7 +461,7 @@ def plot_bands_by_modulation():
             ('70cm', 432.000, 432.100),
         ],
         'SSB (J3E)\nVoce': [
-            ('160m', 1.840, 2.000),
+            ('160m', 1.840, 1.850),
             ('80m', 3.600, 3.800),
             ('40m', 7.060, 7.200),
             ('20m', 14.101, 14.350),
@@ -540,7 +540,7 @@ def plot_bands_by_application():
 
     applications = [
         ('DX (Lunga Distanza)', '#FFCCCC', [
-            ('160m', '1.8-2.0 MHz', 'Propagazione notturna, DX difficile'),
+            ('160m', '1.810-1.850 MHz', 'Propagazione notturna, DX difficile'),
             ('80m', '3.5-3.8 MHz', 'DX notturno, regionali'),
             ('40m', '7.0-7.2 MHz', 'DX 24h, ottima per inizio'),
             ('20m', '14.0-14.35 MHz', 'Banda DX per eccellenza'),
@@ -640,10 +640,10 @@ def plot_regulatory_overview():
 
     # Dati normativi Italia
     regulatory_data = [
-        {'band': '160m', 'freq': '1.810-2.000', 'status': 'Secondario', 'power': '500W',
-         'notes': 'Condivisa con altri servizi', 'color': '#FFCCCC'},
-        {'band': '80m', 'freq': '3.500-3.800', 'status': 'Primario', 'power': '500W',
-         'notes': 'Uso esclusivo radioamatori', 'color': '#CCFFCC'},
+        {'band': '160m', 'freq': '1.830-1.850', 'status': 'Primario', 'power': '500W',
+         'notes': 'PNRF: solo 1830-1850 primario', 'color': '#CCFFCC'},
+        {'band': '80m', 'freq': '3.500-3.800', 'status': 'Secondario', 'power': '500W',
+         'notes': 'PNRF: secondario in Italia', 'color': '#FFCCCC'},
         {'band': '60m', 'freq': '5.3515-5.3665', 'status': 'Secondario', 'power': '15W EIRP',
          'notes': 'Canalizzato, 5 canali', 'color': '#FFCCCC'},
         {'band': '40m', 'freq': '7.000-7.200', 'status': 'Primario', 'power': '500W',
@@ -664,8 +664,8 @@ def plot_regulatory_overview():
          'notes': '"Magic Band" - sporadic-E', 'color': '#FFCCCC'},
         {'band': '2m', 'freq': '144.000-146.000', 'status': 'Primario', 'power': '500W',
          'notes': 'VHF principale', 'color': '#CCFFCC'},
-        {'band': '70cm', 'freq': '430.000-440.000', 'status': 'Secondario', 'power': '500W',
-         'notes': 'Condivisa, ISM', 'color': '#FFCCCC'},
+        {'band': '70cm', 'freq': '430.000-438.000', 'status': 'Misto', 'power': '500W',
+         'notes': '430-434 sec, 435-436 pri, 436-438 sec', 'color': '#FFFFCC'},
         {'band': '23cm', 'freq': '1240-1300', 'status': 'Secondario', 'power': '500W',
          'notes': 'Condivisa GNSS', 'color': '#FFCCCC'},
     ]

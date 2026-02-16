@@ -81,6 +81,7 @@ Uses a simple file-based task system with YAML config. Tasks are stored as Markd
   - `CEPT_TR 61-01.pdf`: CEPT temporary amateur license recommendation
   - `CEPT_TR 61-02.pdf`: CEPT HAREC exam recommendation
   - `ITU_Radio_Regulations_2024_Vol1.pdf`: ITU Radio Regulations 2024, Vol 1 (Art. 1, 5, 25)
+  - `PNRF/`: Piano Nazionale di Ripartizione delle Frequenze (Decreto 31 agosto 2022) — Introduzione, Tabelle A/B/C, Note, Glossario, Appendice, Abbreviazioni
 
 <!-- BACKLOG.MD GUIDELINES START -->
 # Instructions for the usage of Backlog.md CLI Tool

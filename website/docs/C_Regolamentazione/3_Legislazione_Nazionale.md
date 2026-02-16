@@ -316,4 +316,5 @@ Fonti primarie:
 - [D.Lgs. 207/2021](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2021-11-08;207) — Recepimento Direttiva (UE) 2018/1972 (riforma significativa del Capo Radioamatori, introduzione Classe N)
 - [D.Lgs. 48/2024](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-03-24;48) — Disposizioni correttive al D.Lgs. 207/2021
 - [Allegato n. 26 — Disciplina dell'attività radioamatoriale](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf) (testo vigente MIMIT)
+- Piano Nazionale di Ripartizione delle Frequenze (PNRF) — Decreto 31 agosto 2022 (per le bande attribuite al servizio radioamatore in Italia)
 :::
