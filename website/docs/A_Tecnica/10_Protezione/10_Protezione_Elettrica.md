@@ -319,6 +319,3 @@ Testa le tue conoscenze sulla protezione elettrica!
 ## Conclusione
 
 La protezione elettrica è fondamentale per ogni radioamatore. Conoscere i rischi, applicare le protezioni appropriate e seguire procedure sicure permette di godere dell'hobby senza pericoli. Ricordate: la sicurezza non è negoziabile! ⚡🛡️
-
----
-<parameter name="filePath">10_Protezione_Elettrica/10_Protezione_Elettrica.md

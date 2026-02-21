@@ -116,23 +116,35 @@ Richiedo assistenza immediata, 4 persone a bordo
 Fine messaggio
 ```
 
-## 🌍 Risoluzione UIT 640
+## 🌍 Comunicazioni di emergenza nel quadro UIT
 
-La **Risoluzione 640** dell'UIT regola l'uso delle stazioni radioamatoriali in caso di catastrofi.
+### La Risoluzione 640 dell'UIT
 
-### Contenuto Principale
+Il programma d'esame per il conseguimento della patente di radioamatore include espressamente lo studio della **Risoluzione 640** dell'UIT, relativa all'uso delle stazioni del servizio di radioamatore in caso di catastrofi naturali. **Poiché il programma d'esame la prevede, è necessario conoscerne i contenuti.**
 
-- **Autorizzazione**: Radioamatori possono assistere in emergenze
-- **Limitazioni**: Solo quando sistemi normali falliscono
-- **Coordinamento**: Con autorità nazionali competenti
-- **Frequenze**: Uso di bande radioamatoriali designate
+:::caution[Stato normativo della Risoluzione 640]
+La Risoluzione 640 è stata formalmente **abrogata alla WRC-97** (Conferenza Mondiale delle Radiocomunicazioni del 1997). I suoi principi sono stati successivamente recepiti nell'**Articolo 25.9A** del Regolamento delle Radiocomunicazioni e nella **Risoluzione 646 (Rev. WRC-19)**. Tuttavia, il programma d'esame italiano continua a fare riferimento alla Risoluzione 640: ai fini della preparazione all'esame, occorre quindi studiare i contenuti qui descritti, che riflettono quanto previsto dalla 640 e oggi confluito nelle norme vigenti.
+:::
+
+### Contenuto della Risoluzione 640
+
+La Risoluzione 640 stabiliva i seguenti principi fondamentali:
+
+- **Preparazione**: Le amministrazioni sono incoraggiate a permettere ai radioamatori di prepararsi e addestrarsi per le comunicazioni di emergenza
+- **Attivazione**: Le stazioni di radioamatore possono essere utilizzate quando i sistemi normali di comunicazione sono compromessi o insufficienti
+- **Coordinamento**: L'attività deve avvenire in coordinamento con le autorità nazionali competenti
+- **Frequenze**: Utilizzo delle bande radioamatoriali designate per le comunicazioni di emergenza
 
 ### Condizioni di Utilizzo
 
-1. **Emergenza reale**: Catastrofe naturale o situazione critica
-2. **Autorizzazione**: Da autorità competenti (Protezione Civile, etc.)
+1. **Emergenza reale**: Catastrofe naturale o situazione critica che compromette le comunicazioni ordinarie
+2. **Autorizzazione**: Da autorità competenti (in Italia: Protezione Civile — Art. 141 D.Lgs. 259/2003)
 3. **Coordinamento**: Con centri di emergenza ufficiali
-4. **Limitato nel tempo**: Solo per durata emergenza
+4. **Limitato nel tempo**: Solo per la durata dell'emergenza
+
+### Art. 25.9A del Regolamento delle Radiocomunicazioni
+
+L'**Articolo 25.9A** del Regolamento delle Radiocomunicazioni dell'UIT ha recepito e rafforzato i principi della Risoluzione 640, incoraggiando le amministrazioni a consentire alle stazioni di radioamatore di prepararsi e contribuire alle comunicazioni di soccorso in caso di calamità. La **Risoluzione 646 (Rev. WRC-19)** disciplina oggi nel dettaglio l'uso delle telecomunicazioni per il soccorso in caso di catastrofi, estendendo il campo di applicazione oltre il solo servizio di radioamatore.
 
 ## 🌊 Utilizzo Internazionale in Catastrofi
 
@@ -297,16 +309,16 @@ Testa le tue conoscenze sui segnali internazionali di soccorso!
   <p>MAYDAY indica una situazione di pericolo imminente che richiede assistenza immediata.</p>
 </details>
 
-### Domanda 3: Quale risoluzione UIT regola l'uso dei radioamatori in catastrofi?
+### Domanda 3: Quale risoluzione UIT è prevista dal programma d'esame per l'uso delle stazioni radioamatoriali in caso di catastrofi?
 - A) Risoluzione 640
-- B) Risoluzione 500
-- C) Risoluzione 200
-- D) Risoluzione 100
+- B) Risoluzione 646
+- C) Risoluzione 500
+- D) Risoluzione 200
 
 <details>
   <summary>Risposta</summary>
   <p><strong>A) Risoluzione 640</strong></p>
-  <p>La Risoluzione 640 dell'UIT autorizza i radioamatori ad assistere in emergenze quando i sistemi normali falliscono.</p>
+  <p>Il programma d'esame prevede espressamente lo studio della Risoluzione 640, relativa all'uso delle stazioni radioamatoriali in caso di catastrofi naturali. Sebbene la Ris. 640 sia stata abrogata alla WRC-97 e i suoi contenuti siano confluiti nell'Art. 25.9A del Regolamento e nella Ris. 646 (Rev. WRC-19), ai fini dell'esame è la Risoluzione 640 la risposta corretta.</p>
 </details>
 
 ### Domanda 4: Quale segnale si usa per situazioni urgenti ma non di pericolo imminente?
@@ -337,5 +349,9 @@ Testa le tue conoscenze sui segnali internazionali di soccorso!
 
 I segnali internazionali di soccorso rappresentano il ponte tra la tecnologia radioamatoriale e il salvataggio di vite umane. Come radioamatori, siamo parte di una rete globale di solidarietà che può fare la differenza in momenti critici. Conoscere questi segnali, rispettare le procedure e prepararsi adeguatamente significa essere pronti a servire la comunità quando più ne ha bisogno. L'etere non è solo comunicazione, ma anche protezione e soccorso! 🚨📻
 
+
 ---
-<parameter name="filePath">B_Operativa/3_Segnali_Internazionali_Soccorso.md
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione B.4** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)). Il programma d'esame prevede lo studio della **Risoluzione 640** dell'UIT (abrogata alla WRC-97, contenuti oggi recepiti nell'Art. 25.9A del Regolamento e nella Ris. 646). Per le comunicazioni di emergenza si vedano il [Regolamento delle Radiocomunicazioni UIT](https://www.itu.int/hub/publication/r-reg-rr-2024/) (Art. 25.9A) e la [Risoluzione 646 (Rev. WRC-19)](https://www.itu.int/dms_pub/itu-r/oth/0C/0A/R0C0A00000F00133PDFE.pdf).
+:::

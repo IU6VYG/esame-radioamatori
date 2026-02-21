@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an Italian amateur radio exam preparation repository containing study materials in Markdown format. The content follows the official exam program (Sub_Allegato_D_All.26.pdf) and covers:
+This is an Italian amateur radio exam preparation repository containing study materials in Markdown format. The content follows the official exam program (fonti/programmadesameradioamatori.pdf) and covers:
 
 - **A. Technical Topics** (Chapters 01-10): Electricity, electronics, circuits, receivers, transmitters, antennas, propagation, measurements, interference, electrical protection
 - **B. Operational Topics** (B_Operativa/): Q codes, abbreviations, distress signals, call signs, IARU frequency plans
@@ -72,7 +72,16 @@ Uses a simple file-based task system with YAML config. Tasks are stored as Markd
 - `website/sidebars.ts`: Sidebar navigation structure
 - `website/docs/intro.md`: Landing page (slug: /)
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow
-- `Sub_Allegato_D_All.26.pdf` / `.txt`: Official exam program source document
+- `fonti/`: Official source documents (PDFs) for content verification:
+  - `programmadesameradioamatori.pdf`: Exam program (Sub Allegato D, Allegato 26, D.Lgs. 259/2003)
+  - `2003_Codice_comunicazioni_DL_2003_259_GU.pdf`: D.Lgs. 259/2003 original
+  - `2021_Modifiche_Codice_Comunicazioni_DL_marzo_2021.pdf`: 2021 amendments to Allegato 26
+  - `2024_DLGS_259_2003_ aggiornato 2024.pdf`: Consolidated text 2024
+  - `2024__Ulteriori_modifiche_Codice_comunicazioni_DL_2024_48.pdf`: D.L. 48/2024
+  - `CEPT_TR 61-01.pdf`: CEPT temporary amateur license recommendation
+  - `CEPT_TR 61-02.pdf`: CEPT HAREC exam recommendation
+  - `ITU_Radio_Regulations_2024_Vol1.pdf`: ITU Radio Regulations 2024, Vol 1 (Art. 1, 5, 25)
+  - `PNRF/`: Piano Nazionale di Ripartizione delle Frequenze (Decreto 31 agosto 2022) — Introduzione, Tabelle A/B/C, Note, Glossario, Appendice, Abbreviazioni
 
 <!-- BACKLOG.MD GUIDELINES START -->
 # Instructions for the usage of Backlog.md CLI Tool
