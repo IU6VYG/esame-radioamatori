@@ -6,7 +6,7 @@
 > Il materiale è soggetto a revisione continua grazie al contributo volontario della comunità.
 > [Contribuisci su GitHub](https://github.com/IU6VYG/esame-radioamatori)
 
-Questo repository contiene materiali di studio organizzati per preparare l'esame di radioamatore. I contenuti sono estratti e strutturati dal programma ufficiale (Sub_Allegato_D_All.26.pdf), divisi in macroargomenti e argomenti specifici per facilitare lo studio.
+Questo repository contiene materiali di studio organizzati per preparare l'esame di radioamatore. I contenuti sono estratti e strutturati dal programma ufficiale (fonti/programmadesameradioamatori.pdf), divisi in macroargomenti e argomenti specifici per facilitare lo studio.
 
 ## Sito Web
 

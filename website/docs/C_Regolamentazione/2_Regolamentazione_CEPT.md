@@ -72,18 +72,18 @@ La **Raccomandazione TR 61-01** permette l'uso temporaneo delle stazioni radioam
 
 ### Condizioni per l'Utilizzo Temporaneo
 
-1. **Licenza valida**: Classe CEPT riconosciuta
-2. **Periodo**: Massimo 3 mesi per anno per paese
-3. **Identificazione**: Indicativo del paese ospitante + proprio
-4. **Rispetto normative locali**: Potenza, bande, ecc.
-5. **Nessuna tariffa**: Gratuito (tranne eventuali costi amministrativi)
+1. **Licenza valida**: Licenza nazionale equivalente alla CEPT (vedi tabella T/R 61-01 Annex 2)
+2. **Periodo**: Per la durata del soggiorno temporaneo (non è fissato un limite specifico nella T/R 61-01; singoli paesi possono prevedere restrizioni)
+3. **Identificazione**: Prefisso del paese ospitante + "/" + proprio indicativo nazionale (Sezione 2.3 T/R 61-01)
+4. **Rispetto normative locali**: Bande, potenza e condizioni tecniche del paese visitato
+5. **Nessuna tariffa**: Nessun diritto amministrativo né canone di frequenza nel paese visitato
 
 ### Esempio Pratico
 Un radioamatore italiano (IK0AAA) in vacanza in Germania:
-- Usa licenza italiana HAREC
-- Identificativo: DL/IK0AAA/P (P = portable)
-- Potenza massima: Minimo tra limiti italiani (100W) e tedeschi
-- Durata massima: 3 mesi
+- Usa licenza italiana HAREC (Classe A)
+- Identificativo: DL/IK0AAA (prefisso DL dalla tabella T/R 61-01 + proprio indicativo, separati da "/")
+- Potenza massima: Rispettare i limiti del paese visitato
+- Durata: Per la durata del soggiorno temporaneo
 
 ### Procedure di Utilizzo Temporaneo
 ```mermaid
@@ -99,20 +99,23 @@ graph LR;
 
 ## 🌍 Paesi Non Membri CEPT
 
-Alcuni paesi non europei partecipano al sistema CEPT attraverso accordi bilaterali.
+La T/R 61-01 prevede che anche paesi **non CEPT** possano aderire al sistema di licenza CEPT (Annex 3 e 4). I paesi non-CEPT aderenti includono:
 
-### Paesi Partecipanti
+### Paesi Non-CEPT Aderenti (Annex 4 T/R 61-01)
 
-- **Svizzera**: Accordo speciale con UE
-- **Regno Unito**: Dopo Brexit, mantiene accordi
-- **Norvegia, Islanda**: Partecipano attivamente
-- **Alcuni paesi balcanici**: In fase di adesione
+- **Australia** (VK), **Canada** (VE), **USA** (W/K)
+- **Nuova Zelanda** (ZL), **Sud Africa** (ZS)
+- **Israele** (4X/4Z), **Perù** (OA)
 
-### Condizioni per Paesi Non Membri
+:::note
+Svizzera (HB9), Norvegia (LA), Islanda (TF) e Regno Unito (M) **sono membri CEPT** a pieno titolo e figurano nella tabella Annex 2 della T/R 61-01. Il sistema si applica direttamente senza bisogno di accordi bilaterali.
+:::
 
-- **Stesso sistema**: TR 61-01 applicabile
-- **Accordi bilaterali**: Tra paese ospite e paese d'origine
-- **Limitazioni**: Possibili restrizioni su alcune bande
+### Condizioni per Paesi Non-CEPT Aderenti
+
+- **Statement of Conformity**: L'amministrazione non-CEPT presenta una dichiarazione di conformità (SOC) al HAREC
+- **Approvazione ECC**: Necessaria l'approvazione del Comitato Elettronico delle Comunicazioni
+- **Limitazioni**: Possibili restrizioni specifiche indicate nelle note della tabella Annex 4
 
 ## 📊 Benefici per i Radioamatori
 
@@ -127,9 +130,11 @@ Alcuni paesi non europei partecipano al sistema CEPT attraverso accordi bilatera
 
 | Situazione | Identificativo | Note |
 |------------|----------------|------|
-| Italia in Francia | F/IK0AAA/P | P = Portable |
-| Germania in Italia | I/DL1ABC/M | M = Mobile |
-| Spagna in Portogallo | CT/EA1BCD | Senza suffisso |
+| Italiano in Francia | F/IK0AAA | Prefisso "F" da T/R 61-01 Annex 2 |
+| Tedesco in Italia | I/DL1ABC | Prefisso "I" da T/R 61-01 Annex 2 |
+| Spagnolo in Portogallo | CT7/EA1BCD | Prefisso "CT7" da T/R 61-01 Annex 2 |
+
+I suffissi /P (portable) o /M (mobile) possono essere aggiunti secondo le convenzioni nazionali.
 
 ### Limitazioni Importanti
 
@@ -198,16 +203,16 @@ Testa le tue conoscenze sulla regolamentazione CEPT!
   <p>Il sistema CEPT prevede due classi: CEPT HAREC (licenza piena) e CEPT Novice (licenza base).</p>
 </details>
 
-### Domanda 3: Quanto tempo può durare l'utilizzo temporaneo in un paese CEPT?
-- A) 1 settimana
-- B) 1 mese
-- C) 3 mesi per anno
-- D) Illimitato
+### Domanda 3: Cosa prevede la T/R 61-01 riguardo alla durata dell'utilizzo temporaneo?
+- A) Massimo 1 settimana
+- B) Massimo 3 mesi per anno
+- C) Per la durata del soggiorno temporaneo
+- D) Illimitato senza restrizioni
 
 <details>
   <summary>Risposta</summary>
-  <p><strong>C) 3 mesi per anno</strong></p>
-  <p>La TR 61-01 permette massimo 3 mesi di utilizzo temporaneo per anno in ciascun paese.</p>
+  <p><strong>C) Per la durata del soggiorno temporaneo</strong></p>
+  <p>La T/R 61-01 prevede la validità "for the duration of their temporary stays". Non fissa un limite numerico specifico; eventuali limiti temporali possono essere stabiliti dai singoli paesi.</p>
 </details>
 
 ### Domanda 4: Come si identifica una stazione in utilizzo temporaneo?
@@ -219,7 +224,7 @@ Testa le tue conoscenze sulla regolamentazione CEPT!
 <details>
   <summary>Risposta</summary>
   <p><strong>B) Indicativo paese ospite + proprio indicativo</strong></p>
-  <p>Ad esempio: F/IK0AAA/P per un italiano in Francia.</p>
+  <p>Ad esempio: F/IK0AAA per un italiano in Francia (il suffisso /P può essere aggiunto secondo le convenzioni locali).</p>
 </details>
 
 ### Domanda 5: Quale certificato consente l'uso temporaneo secondo la T/R 61-01?
@@ -238,5 +243,13 @@ Testa le tue conoscenze sulla regolamentazione CEPT!
 
 La CEPT rappresenta un modello di successo di cooperazione europea nelle telecomunicazioni. Per i radioamatori, significa libertà di esplorare l'etere europeo senza barriere burocratiche. Rispettare queste regole garantisce a tutti noi un'esperienza radioamatoriale sicura e piacevole in tutto il continente! 📻🇪🇺
 
+
 ---
-<parameter name="filePath">C_Regolamentazione/2_Regolamentazione_CEPT.md
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione C.2** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)).
+
+Fonti primarie:
+- [Raccomandazione CEPT T/R 61-01](https://docdb.cept.org/download/2ae38a89-e58a/TR6101.pdf) — Licenza CEPT di radioamatore (uso temporaneo nei paesi CEPT e non-CEPT aderenti)
+- [Raccomandazione CEPT T/R 61-02](https://docdb.cept.org/download/4424) — Esame armonizzato HAREC per radioamatori
+:::

@@ -74,28 +74,30 @@ Ogni banda ha un piano dettagliato con segmenti dedicati a diversi modi e usi.
 
 *Figura: Allocazione delle bande HF radioamatoriali secondo il piano IARU Regione 1. I colori identificano i diversi modi di emissione.*
 
-### Banda 160m (1.8 MHz)
+### Banda 160m (1.810–1.850 kHz)
 
-| Segmento | Frequenza | Uso Principale | Note |
+L'allocazione ITU Regione 1 copre solo 1.810–1.850 kHz (primario). Alcuni paesi Regione 1, in base alla nota 5.99, possono estendere l'allocazione fino a 2.000 kHz. In Italia il PNRF assegna come primario solo **1.830–1.850 kHz**.
+
+| Segmento | Frequenza (kHz) | Uso Principale | Note |
 |----------|-----------|----------------|------|
-| **CW/Digital** | 1.800-1.810 | CW, Digi | DX |
-| **CW** | 1.810-1.830 | CW | Mondiale |
-| **SSB** | 1.830-1.850 | SSB | Contatti |
-| **CW/Digital** | 1.850-1.880 | CW, Digi | DX |
-| **SSB** | 1.880-2.000 | SSB | Contatti |
+| **CW** | 1.810-1.838 | CW | Intercontinentale, DX window |
+| **CW/SSB** | 1.838-1.840 | CW/SSB/Digi | Transizione |
+| **SSB** | 1.840-1.850 | SSB | Contatti fonia |
+
+:::note
+In Italia, l'allocazione primaria PNRF parte da 1.830 kHz (non da 1.810). La porzione 1.810–1.830 non e' allocata al servizio radioamatore nel PNRF.
+:::
 
 ### Diagramma Banda 160m
 ```mermaid
 graph LR;
-    Banda160["160m (1.8 MHz)<br>🌙"] --> CW1["CW/Digi<br>1.800-1.810"];
-    Banda160 --> CW2["CW<br>1.810-1.830"];
-    Banda160 --> SSB1["SSB<br>1.830-1.850"];
-    Banda160 --> CW3["CW/Digi<br>1.850-1.880"];
-    Banda160 --> SSB2["SSB<br>1.880-2.000"];
+    Banda160["160m<br>1.810-1.850 kHz"] --> CW1["CW<br>1.810-1.838"];
+    Banda160 --> Trans["CW/SSB/Digi<br>1.838-1.840"];
+    Banda160 --> SSB1["SSB<br>1.840-1.850"];
     classDef cw fill:#f00,stroke:#333,stroke-width:2px;
-    class CW1,CW2,CW3 cw;
+    class CW1 cw;
     classDef ssb fill:#0f0,stroke:#333,stroke-width:2px;
-    class SSB1,SSB2 ssb;
+    class SSB1 ssb;
 ```
 
 ## 🌍 Differenze Regionali
@@ -182,35 +184,40 @@ Regione 3:     7.000-7.040 CW, 7.040-7.080 Digi, 7.080-7.100 SSB
 
 *Figura: Allocazione delle bande VHF e UHF (2m, 70cm, 23cm) secondo il piano IARU Regione 1.*
 
-### Banda 2m (144 MHz)
+### Banda 2m (144–146 MHz)
 
-| Segmento | Frequenza | Uso | Note |
+In Italia (PNRF nota 69): 144,0–145,8 MHz e' ad uso esclusivo del servizio radioamatore; 145,8–146,0 MHz e' ad uso esclusivo del servizio radioamatore via satellite.
+
+| Segmento | Frequenza (MHz) | Uso | Note |
 |----------|-----------|-----|------|
-| CW/SSB | 144.000-144.100 | CW/SSB | Aurora, EME |
-| FM | 144.100-144.200 | FM | Ripetitori |
-| FM | 144.200-144.300 | FM | Simplex |
-| CW/SSB | 144.300-144.400 | CW/SSB | Contatti |
-| FM | 144.400-144.500 | FM | DX |
-| CW/SSB | 144.500-144.600 | CW/SSB | Contatti |
-| FM | 144.600-144.800 | FM | Ripetitori |
-| CW/SSB | 144.800-144.990 | CW/SSB | Contatti |
-| Beacon | 144.990-145.000 | Beacon | Test |
+| CW/SSB | 144.000–144.150 | CW, SSB, EME | EME e CW DX |
+| SSB | 144.150–144.400 | SSB | Contatti fonia |
+| Beacon | 144.400–144.490 | Beacon | Propagazione |
+| Tutti modi | 144.500–144.794 | Tutti modi | |
+| Digi | 144.794–144.990 | Modi digitali | APRS 144.800 |
+| Beacon | 144.990–145.194 | Beacon | |
+| FM simplex | 145.194–145.594 | FM simplex | Chiamata 145.500 |
+| FM ripetitori | 145.594–145.800 | FM ripetitori | Uscite ripetitori |
+| Satellite | 145.800–146.000 | Satellite | Solo radioamatore-satellite (nota 69 PNRF) |
 
-### Banda 70cm (430 MHz)
+### Banda 70cm (430–438 MHz)
 
-| Segmento | Frequenza | Uso | Note |
+In Italia (PNRF): 430–434 MHz secondario, 435–436 MHz primario (anche satellite), 436–438 MHz secondario.
+
+| Segmento | Frequenza (MHz) | Uso | Note |
 |----------|-----------|-----|------|
-| FM | 430.000-430.100 | FM | Ripetitori |
-| FM | 430.100-430.200 | FM | Simplex |
-| CW/SSB | 430.200-430.300 | CW/SSB | Contatti |
-| FM | 430.300-430.400 | FM | DX |
-| CW/SSB | 430.400-430.500 | CW/SSB | Contatti |
-| FM | 430.500-430.600 | FM | Ripetitori |
-| CW/SSB | 430.600-430.700 | CW/SSB | Contatti |
-| FM | 430.700-430.800 | FM | DX |
-| CW/SSB | 430.800-430.900 | CW/SSB | Contatti |
-| FM | 430.900-431.000 | FM | Ripetitori |
-| CW/SSB | 431.000-432.000 | CW/SSB | Satellite |
+| CW/SSB | 430.000–430.100 | CW, SSB, EME | EME, weak signal |
+| CW/SSB | 430.100–430.400 | CW/SSB | Contatti bande strette |
+| Beacon | 430.400–430.600 | Beacon | Propagazione |
+| Tutti modi | 430.600–431.975 | Tutti modi | FM simplex, digitale |
+| FM ripetitori | 431.975–432.000 | FM | Input ripetitori |
+| CW/SSB/EME | 432.000–432.100 | CW, SSB, EME | EME window |
+| SSB/CW | 432.100–432.400 | SSB, CW | Contatti bande strette |
+| Tutti modi | 432.400–433.400 | Tutti modi | FM simplex, digi |
+| FM simplex | 433.400–433.600 | FM simplex | Chiamata 433.500 |
+| FM ripetitori | 433.600–434.000 | FM ripetitori | Uscite ripetitori |
+| ATV | 434.000–435.000 | ATV | Amateur Television |
+| Satellite | 435.000–438.000 | Satellite | Uplink/downlink satellite |
 
 ## 🔄 Modi Speciali e Segmenti
 
@@ -242,9 +249,9 @@ I modi digitali sono diventati fondamentali nel radioamatorismo moderno. Ecco un
 
 ### Satellite
 
-- **Uplink**: 145.900-146.000 MHz (2m)
-- **Downlink**: 435.000-438.000 MHz (70cm)
-- **Modi**: FM, SSB
+- **2m**: 145.800-146.000 MHz (uso esclusivo satellite in Italia, nota 69 PNRF)
+- **70cm**: 435.000-438.000 MHz (uplink/downlink)
+- **Modi**: FM, SSB, CW, modi digitali
 
 ### EME (Luna)
 
@@ -347,7 +354,7 @@ Per facilitare la comprensione dei piani di frequenza, ecco alcune visualizzazio
 - **Digital**: Nuovi segmenti per FT8, FT4
 - **Satellite**: Frequenze dedicate
 - **Emergenze**: Bande riservate
-- **Nuove bande**: 60m, 4m aggiunte
+- **Nuove bande**: 60m (5 MHz), 2200m e 630m aggiunte
 
 ## 🧠 Quiz di Ripasso
 
@@ -417,5 +424,9 @@ Testa le tue conoscenze sui piani frequenze IARU!
 
 I piani di frequenze IARU sono la colonna portante dell'ordine radioamatoriale mondiale. Senza questi piani dettagliati, l'etere sarebbe un caos di interferenze e conflitti. Rispettandoli, contribuiamo tutti a mantenere un ambiente radio pulito ed efficiente, dove ogni radioamatore può trovare il suo spazio per esplorare l'eccitante mondo delle comunicazioni! 📻📊
 
+
 ---
-<parameter name="filePath">B_Operativa/5_Piani_Frequenze_IARU.md
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione B.6** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)). Le bande di frequenza assegnate al servizio di radioamatore sono definite nel [Regolamento delle Radiocomunicazioni UIT](https://www.itu.int/hub/publication/r-reg-rr-2024/) (Art. 5). Le allocazioni nazionali italiane sono definite nel Piano Nazionale di Ripartizione delle Frequenze (PNRF), Decreto 31 agosto 2022.
+:::

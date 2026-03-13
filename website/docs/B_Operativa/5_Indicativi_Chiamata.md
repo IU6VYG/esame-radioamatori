@@ -157,7 +157,7 @@ Quando si opera fuori dalla propria zona, si aggiungono suffissi speciali.
 
 #### Esempi Pratici
 
-- **In vacanza in Germania**: DK/IK0AAA/P
+- **In vacanza in Germania**: DL/IK0AAA
 - **Da auto in Sicilia**: IT9/IK0AAA/M
 - **Da barca**: IK0AAA/MM
 
@@ -322,3 +322,7 @@ Testa le tue conoscenze sugli indicativi di chiamata!
 Gli indicativi di chiamata sono il nostro biglietto da visita nell'etere mondiale. Dalla loro struttura precisa alle regole di utilizzo, rappresentano l'ordine e la legalità delle comunicazioni radioamatoriali. Utilizzarli correttamente significa rispettare la comunità globale e garantire che ogni trasmissione sia identificabile e tracciabile. Il nostro indicativo non è solo un codice: è la nostra firma nell'etere! 📻🆔
 
 ---
+
+:::info[📖 Fonti e riferimenti normativi]
+Questa pagina tratta gli argomenti della **Sezione B.5** del Programma d'esame per il conseguimento della patente di radioamatore ([Sub Allegato D al D.Lgs. 259/2003](https://www.mimit.gov.it/images/stories/documenti/allegati/Allegato_n_26_al_CdC_testo_vigente.pdf)). La struttura degli indicativi è disciplinata dal [Regolamento delle Radiocomunicazioni UIT](https://www.itu.int/hub/publication/r-reg-rr-2024/) (Art. 19).
+:::

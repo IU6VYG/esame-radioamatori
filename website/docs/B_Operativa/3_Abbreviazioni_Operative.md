@@ -328,6 +328,3 @@ Testa le tue conoscenze sulle abbreviazioni operative!
 ## Conclusione
 
 Le abbreviazioni operative sono il collante che tiene unite le comunicazioni radioamatoriali mondiali. Dalla loro origine telegrafica alla loro evoluzione digitale, continuano a rendere possibile lo scambio rapido e preciso di informazioni attraverso l'etere. Imparare questo linguaggio significa diventare cittadini dell'etere, capaci di comunicare efficacemente con radioamatori di ogni paese e cultura! 📻🔤
-
----
-<parameter name="filePath">B_Operativa/2_Abbreviazioni_Operative.md

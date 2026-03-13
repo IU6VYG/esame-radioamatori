@@ -289,6 +289,3 @@ Testa le tue conoscenze sulla propagazione delle onde radio!
 ## Conclusione
 
 La propagazione è l'arte di prevedere e sfruttare i comportamenti delle onde radio nell'ambiente terrestre. Dai riflessi ionosferici per DX mondiali alle guide troposferiche per contatti locali, ogni meccanismo offre opportunità uniche ai radioamatori. Studiate le condizioni, monitorate i segnali, e scoprirete un mondo di possibilità di comunicazione! 📡
-
----
-<parameter name="filePath">07_Propagazione/7_Propagazione.md
